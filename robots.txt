@@ -1,0 +1,9 @@
+# Archivo robots.txt para INTI
+User-agent: *
+Allow: /biblioteca/
+
+# Bloqueo estricto de scripts y bases de datos
+Disallow: /cgi-bin/
+
+# Enlace directo a tu mapa del sitio
+Sitemap: https://aap.inti.gob.ar/biblioteca/sitemap.xml

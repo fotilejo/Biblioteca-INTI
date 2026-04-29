@@ -1,0 +1,1921 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca INTI</title>
+	<link rel="canonical" href="https://app.inti.gob.ar/biblioteca/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://app.inti.gob.ar/biblioteca/">
+    <meta property="og:title" content="Biblioteca Central INTI">
+    <meta property="og:description" content="Acceda al catálogo bibliográfico, diccionarios técnicos y recursos especializados en ciencia, tecnología e industria del Instituto Nacional de Tecnología Industrial.">
+    <meta property="og:image" content="https://app.inti.gob.ar/biblioteca/imagenes/LogoINTI.png">
+    <meta property="og:site_name" content="INTI">
+    <meta property="og:locale" content="es_AR">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@intiargentina">
+    <meta name="twitter:title" content="Biblioteca Central INTI">
+    <meta name="twitter:description" content="Catálogo bibliográfico, diccionarios técnicos y recursos especializados en ciencia y tecnología.">
+    <meta name="twitter:image" content="https://app.inti.gob.ar/biblioteca/imagenes/LogoINTI.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Library",
+      "name": "Biblioteca Central INTI",
+      "alternateName": "Biblioteca del Instituto Nacional de Tecnología Industrial",
+      "url": "https://app.inti.gob.ar/biblioteca/",
+      "logo": "https://app.inti.gob.ar/biblioteca/imagenes/LogoINTI.png",
+      "image": "https://app.inti.gob.ar/biblioteca/imagenes/biblio3.avif",
+      "description": "Centro de información especializado en ciencia, tecnología, industria y calidad, diseñado para apoyar la investigación y el desarrollo a nivel nacional.",
+      "telephone": "+54-011-4724-6200",
+      "email": "biblio@inti.gob.ar",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Gral. Paz 5445, Edificio 5, Parque Tecnológico Miguelete",
+        "addressLocality": "San Martín",
+        "addressRegion": "Buenos Aires",
+        "postalCode": "B1650KNA",
+        "addressCountry": "AR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -34.5722, 
+        "longitude": -58.5147
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:30",
+        "closes": "16:00"
+      },
+      "departmentOf": {
+        "@type": "GovernmentOrganization",
+        "name": "Instituto Nacional de Tecnología Industrial"
+      }
+    }
+    </script>
+    <meta name="description" content="Biblioteca del Instituto Nacional de Tecnología Industrial">
+    
+	<link rel="preload" href="/prueba/css/fonts.css" as="style">
+    <link rel="stylesheet" href="/prueba/css/fonts.css">
+	<link rel="stylesheet" href="/prueba/css/all.min.css">
+	<link rel="stylesheet" href="/prueba/css/estilos.css">
+	<link rel="icon" type="image/svg+xml" href="imagenes/favicon_inti.svg">
+	
+</head>
+<body>
+
+    <div class="gov-bar">
+        <div class="container">Ministerio de Economía | Industria, Comercio y PyME | Instituto Nacional de Tecnología Industrial</div>
+    </div>
+
+    <header>
+		<div class="container header-inner" style="display: flex; align-items: center; justify-content: space-between;">
+			
+			<div class="logo" onclick="showSection('home')" style="cursor:pointer; display:flex; align-items:center;">
+				<img src="imagenes/LogoINTI.png" alt="INTI" style="height: 65px; width: auto;">
+				<span style="border-left: 1px solid #ccc; padding-left: 15px; margin-left: 15px; color: var(--secondary); font-weight: 300; font-size: 1.3rem;">Biblioteca</span>
+			</div>
+			
+			<nav style="margin-left: auto; margin-right: 25px;">
+				<ul class="nav-menu" id="mainNav">
+					<li class="nav-link active" onclick="showSection('home')">Inicio</li>
+					<li class="nav-link" onclick="showSection('catalogo')">Catálogo</li>
+					<li class="nav-link" onclick="showSection('fuentes')">Guía de Fuentes</li>
+					<li class="nav-link" onclick="showSection('diccionarios')">Diccionarios Técnicos</li>
+					<li class="nav-link" onclick="showSection('novedades')">Noticias</li>
+					<li class="nav-link" onclick="showSection('faq')">Ayuda</li>
+				</ul>
+			</nav>
+
+			<div class="header-actions" style="display: flex; align-items: center; gap: 15px;">
+				
+				<button id="btn-mis-busquedas" onclick="toggleMisBusquedas()" title="Mis búsquedas guardadas" aria-label="Mis búsquedas guardadas" style="background:none; border:none; cursor:pointer; display:flex; align-items:center; gap:4px; padding:8px; border-radius:6px; transition:all 0.2s;">
+					<i class="fas fa-bookmark" style="color:var(--primary); font-size: 1.3rem;"></i>
+					<span id="contador-busquedas" style="display:none; background:var(--accent); color:#232d4f; border-radius:20px; padding:2px 6px; font-size:0.75rem; font-weight:700; margin-top: -12px; margin-left: -6px;"></span>
+				</button>
+				
+				<button class="mobile-toggle" onclick="toggleMenu()" aria-label="Abrir menú de navegación" style="border: none; background: transparent; padding: 0;">
+					<i class="fas fa-bars" aria-hidden="true" style="font-size: 1.5rem; color: var(--primary);"></i>
+				</button>
+				
+			</div>
+
+		</div>
+	</header>
+
+    <div class="black-separator top-separator" aria-hidden="true"></div>
+
+    <div id="main-content-wrapper">
+        
+        <div id="home" class="page-section">
+            
+			<section class="hero">
+                <div class="container">
+                    <h1>Biblioteca INTI</h1>
+                    <div class="hero-subtitle">Instituto Nacional de Tecnología Industrial</div>
+                </div>
+            </section>
+
+            <section class="container">
+					<div class="cards-grid">
+						<div class="card" onclick="showSection('catalogo')" style="cursor:pointer" tabindex="0" role="button" aria-label="Consultar el Catálogo Bibliográfico" onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }">
+							<div class="card-icon card-1" aria-hidden="true"><i class="fas fa-search"></i></div>
+							<h3>Catálogo Bibliográfico</h3>
+							<p>Acceda a libros, revistas, normas y material técnico disponible en nuestra sede.</p>
+							<span class="btn btn-outline" aria-hidden="true">Consultar</span>
+						</div>
+						
+						<div class="card" onclick="window.open('https://app.inti.gob.ar/greenstone3/biblio', '_blank', 'noopener,noreferrer')" style="cursor:pointer" tabindex="0" role="button" aria-label="Explorar el Repositorio Institucional INTI en una nueva pestaña" onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }">
+							<div class="card-icon card-2" aria-hidden="true"><i class="fas fa-graduation-cap"></i></div>
+							<h3>Repositorio Institucional INTI</h3>
+							<p>Producción intelectual del INTI en Acceso Abierto: informes, artículos, tesis, etc.</p>
+							<span class="btn btn-outline" aria-hidden="true" style="position: relative; display: flex; align-items: center; justify-content: center;">
+								Explorar 
+								<i class="fas fa-external-link-alt" style="position: absolute; right: 15px; font-size: 0.8rem; opacity: 0.6;"></i>
+							</span>
+						</div>
+						
+						<div class="card" onclick="showSection('fuentes')" style="cursor:pointer" tabindex="0" role="button" aria-label="Explorar la Guía de Fuentes de Información" onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }">
+							<div class="card-icon card-3" aria-hidden="true"><i class="fas fa-globe"></i></div>
+							<h3>Guía de Fuentes de Información</h3>
+							<p>Directorio curado de bases de datos externas y recursos validados.</p>
+							<span class="btn btn-outline" aria-hidden="true">Explorar</span>
+						</div>
+
+						<div class="card" onclick="window.open('/tematres/vocab/index.php', '_blank', 'noopener,noreferrer')" style="cursor:pointer" tabindex="0" role="button" aria-label="Consultar el Tesauro INTI en una nueva pestaña" onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }">
+							<div class="card-icon card-4" aria-hidden="true"><i class="fas fa-sitemap" style="color: #9c27b0;"></i></div>
+							<h3>Tesauro INTI</h3>
+							<p>Vocabulario controlado y estructurado para la indexación y recuperación de información.</p>
+							<span class="btn btn-outline" aria-hidden="true" style="position: relative; display: flex; align-items: center; justify-content: center;">
+								Consultar 
+								<i class="fas fa-external-link-alt" style="position: absolute; right: 15px; font-size: 0.8rem; opacity: 0.6;"></i>
+							</span>
+						</div>
+
+						<div class="card" onclick="showSection('diccionarios')" style="cursor:pointer" tabindex="0" role="button" aria-label="Consultar los Diccionarios Técnicos" onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }">
+							<div class="card-icon card-5" aria-hidden="true"><i class="fas fa-book-atlas" style="color: #00897b;"></i></div>
+							<h3>Diccionarios Técnicos</h3>
+							<p>Diccionarios multilingües especializados en Cobre, Caucho y Ensayos No Destructivos.</p>
+							<span class="btn btn-outline" aria-hidden="true">Consultar</span>
+						</div>
+					</div>
+
+				<div style="width: 100%; margin: 50px 0 30px; text-align: center; clear: both;">
+					<div style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+						<div style="height: 1px; background-color: #e1e5e9; flex-grow: 1; max-width: 250px;"></div>
+						<h3 style="color: #8c98a4; font-size: 0.95rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin: 0;">
+							Recursos Nacionales
+						</h3>
+						<div style="height: 1px; background-color: #e1e5e9; flex-grow: 1; max-width: 250px;"></div>
+					</div>
+				</div>
+
+				<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; width: 100%; margin-bottom: 60px; padding: 0 20px;">
+					
+					<a href="https://biblioteca.sicyt.gob.ar/index.php" rel="noopener noreferrer" target="_blank" 
+					   title="Acceso desde las instituciones habilitadas a artículos completos de más de 11.000 títulos de revistas técnicas y más de 9.000 libros."
+					   style="display: flex; align-items: center; gap: 15px; background: #ffffff; padding: 15px 25px; border-radius: 10px; border: 1px solid #e1e5e9; box-shadow: 0 2px 8px rgba(0,0,0,0.05); text-decoration: none; transition: all 0.3s ease; flex: 1 1 350px; max-width: 450px;" 
+					   onmouseover="this.style.borderColor='#00a7e1'; this.style.boxShadow='0 4px 12px rgba(0,167,225,0.15)'; this.style.transform='translateY(-2px)';"
+					   onmouseout="this.style.borderColor='#e1e5e9'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.05)'; this.style.transform='translateY(0)';"
+					   aria-label="Acceder a la Biblioteca Electrónica de Ciencia y Tecnología">
+						
+						<i class="fas fa-university" style="color: #00a7e1; font-size: 1.4rem; flex-shrink: 0;"></i>
+						<span class="texto-recurso-nacional" style="color: #444; font-size: 0.95rem; font-weight: 500; line-height: 1.3; flex: 1;">
+							Explorar la <strong style="color: var(--primary);">Biblioteca Electrónica de CyT</strong>
+						</span>
+						<i class="fas fa-external-link-alt" style="color: #bbb; font-size: 0.85rem; flex-shrink: 0;"></i>
+					</a>
+
+					<a href="https://repositoriosdigitales.mincyt.gob.ar/" rel="noopener noreferrer" target="_blank" 
+					   title="Red de repositorios institucionales de ciencia y tecnología de Argentina."
+					   style="display: flex; align-items: center; gap: 15px; background: #ffffff; padding: 15px 25px; border-radius: 10px; border: 1px solid #e1e5e9; box-shadow: 0 2px 8px rgba(0,0,0,0.05); text-decoration: none; transition: all 0.3s ease; flex: 1 1 350px; max-width: 450px;" 
+					   onmouseover="this.style.borderColor='#20c997'; this.style.boxShadow='0 4px 12px rgba(32,201,151,0.15)'; this.style.transform='translateY(-2px)';"
+					   onmouseout="this.style.borderColor='#e1e5e9'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.05)'; this.style.transform='translateY(0)';"
+					   aria-label="Acceder al Sistema Nacional de Repositorios Digitales">
+						
+						<i class="fas fa-database" style="color: #20c997; font-size: 1.4rem; flex-shrink: 0;"></i>
+						<span class="texto-recurso-nacional" style="color: #444; font-size: 0.95rem; font-weight: 500; line-height: 1.3; flex: 1;">
+							Sistema Nacional de <strong style="color: var(--primary);">Repositorios Digitales</strong>
+						</span>
+						<i class="fas fa-external-link-alt" style="color: #bbb; font-size: 0.85rem; flex-shrink: 0;"></i>
+					</a>
+
+				</div>
+				
+                <div style="margin-top: 0;"> 
+                    <h2 style="color: var(--primary); margin-bottom: 20px; border-bottom: 1px solid #ddd; padding-bottom: 10px;">
+                        <i class="fas fa-bullhorn" style="color: var(--accent); margin-right: 10px;"></i> Últimas Noticias
+                    </h2>
+                    <div id="latest-news-content"></div>
+                    
+                    <div style="text-align: center; margin-top: 20px;">
+                        <button class="btn btn-outline" onclick="showSection('novedades')">Ver todas las noticias</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+		<section class="ivory-section">
+			<div class="container">
+				<div class="info-grid">
+					<div class="info-block">
+						<h3>Horarios y Atención</h3>
+						<p style="margin-bottom: 20px;">La biblioteca es pública y gratuita para consulta en sala. Se recomienda coordinar cita para material de archivo.</p>
+						<div style="background: white; padding: 15px 25px; border-radius: 6px; border: 1px solid #e0e0e0; width: fit-content;">
+							<i class="far fa-clock text-primary"></i> Lunes a Viernes: <strong>08:30 a 16:00 hs.</strong>
+						</div>
+					</div>
+					<div class="info-block">
+						<h3>Contacto</h3>
+						<ul class="contact-list">
+							<li>
+								<i class="fas fa-envelope"></i>
+								<div><strong>Email:</strong><br><a href="mailto:biblio@inti.gob.ar">biblio@inti.gob.ar</a></div>
+							</li>
+							<li>
+								<i class="fas fa-phone"></i>
+								<div><strong>Teléfono:</strong><br>(011) 4724-6200 - Int. 6407</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+        <div id="catalogo" class="page-section hidden">
+			<section class="catalog-hero">
+				<div class="container">
+					<h1>Catálogo Bibliográfico</h1>
+					<p>Acceda al acervo bibliográfico especializado en tecnología e industria del INTI.</p>
+				</div>
+			</section>
+
+            <div class="catalog-main-container">
+                <div class="catalog-wrapper">
+					<div class="tabs-nav">
+                        <button class="tab-btn active" onclick="openTab(event, 'tab-simple')">
+                            <i class="fas fa-search" style="color: var(--accent);"></i> <span>Búsqueda Simple</span>
+                        </button>
+                        <button class="tab-btn" onclick="openTab(event, 'tab-avanzada')">
+                            <i class="fas fa-cogs" style="color: var(--accent);"></i> <span>Búsqueda Avanzada</span>
+                        </button>
+                    </div>
+
+                    <div id="tab-simple" class="tab-content active">
+                        <form onsubmit="return submitSearch(this)" action="/cgi-bin/wxis/wxis.exe" method="get" target="resultsFrame" accept-charset="ISO-8859-1">
+                            <input type="hidden" name="IsisScript" value="simple.xis">
+                            <input type="hidden" name="inf" value="1"><input type="hidden" name="sup" value="20">
+                            
+                            
+                            <div class="modern-search-wrapper">
+								<div class="modern-search-input-group" style="position: relative;">
+									<i class="fas fa-search search-input-icon"></i>
+									
+									<input type="text" id="input-busqueda-simple" name="busca1" class="modern-search-input" placeholder="Ej: ISO 9001, química analítica, tesis ingeniería..." autocomplete="off" required>
+									
+									<ul id="sugerencias-tesauro" class="sugerencias-lista" style="display: none;"></ul>
+									
+									<button type="submit" class="modern-search-btn">
+										<i class="fas fa-search"></i> Buscar
+									</button>
+								</div>
+								<div class="search-hint">
+									<i class="fas fa-lightbulb"></i> Puede usar palabras sueltas o frases completas
+								</div>
+							</div>
+                            
+                            <div class="database-selector">
+                                <h4 class="selector-title">
+                                    <i class="fas fa-database" style="color: var(--primary);"></i> Seleccione la base de datos
+                                </h4>
+                                <div class="db-selector-grid">
+                                    <div class="db-option-card">
+                                        <input type="radio" name="base" value="inti" id="inti-simple" checked class="db-radio">
+                                        <label for="inti-simple" class="db-card-label">
+                                            <div class="db-icon"><i class="fas fa-book-open"></i></div>
+                                            <div class="db-info">
+                                                <h5>Libros + Normas</h5>
+                                                <p>Libros + Normas</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="db-option-card">
+                                        <input type="radio" name="base" value="cat" id="cat-simple" class="db-radio">
+                                        <label for="cat-simple" class="db-card-label">
+                                            <div class="db-icon"><i class="fas fa-book"></i></div>
+                                            <div class="db-info">
+                                                <h5>Libros</h5>
+                                                <p>Monografías</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="db-option-card">
+                                        <input type="radio" name="base" value="kardex" id="kardex-simple" class="db-radio">
+                                        <label for="kardex-simple" class="db-card-label">
+                                            <div class="db-icon"><i class="fas fa-newspaper"></i></div>
+                                            <div class="db-info">
+                                                <h5>Revistas</h5>
+                                                <p>Public. periódicas</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="db-option-card">
+                                        <input type="radio" name="base" value="norma" id="norma-simple" class="db-radio">
+                                        <label for="norma-simple" class="db-card-label">
+                                            <div class="db-icon"><i class="fas fa-file-alt"></i></div>
+                                            <div class="db-info">
+                                                <h5>Normas</h5>
+                                                <p>Normativas técnicas</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+								
+								<div class="search-hint" id="db-hint" style="margin-top: 12px;">
+									<i class="fas fa-lightbulb"></i> <span id="db-hint-text">Contiene libros, documentos, monografías, artículos, tesis, etc. También contiene normas sin acceso al documento</span>
+								</div>
+																
+                            </div>
+                            
+                            <div class="format-selector-modern">
+                                <div class="format-label">
+                                    <i class="fas fa-eye"></i> Formato de resultados:
+                                </div>
+                                <select name="formato" id="fmt_simple" class="modern-select">
+                                    <option value="completo" selected>Registro completo</option>
+                                    <option value="corto">Sólo títulos</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+
+<div id="tab-avanzada" class="tab-content">
+<form class="advanced-search-form" onsubmit="return submitSearch(this)" action="/cgi-bin/wxis/wxis.exe" method="get" target="resultsFrame" accept-charset="ISO-8859-1">
+    
+    <input type="hidden" name="IsisScript" value="avanzada.xis">
+    <input type="hidden" name="inf" value="1">
+    <input type="hidden" name="sup" value="20">
+    <input type="hidden" name="formato" value="completo">
+
+    <div class="advanced-form-group full-width">
+        <h4 class="selector-title">
+            <i class="fas fa-database" style="color: var(--primary);"></i> Seleccione la base de datos
+        </h4>
+        <div class="db-selector-grid" style="margin-bottom: 0; grid-template-columns: repeat(4, 1fr); min-width: 800px;">
+            <div class="db-option-card">
+                <input type="radio" name="base" value="inti" id="inti-avanzada" checked class="db-radio" onchange="toggleTipoDocumento(this.value)">
+                <label for="inti-avanzada" class="db-card-label">
+                    <div class="db-icon"><i class="fas fa-book-open"></i></div>
+                    <div class="db-info"><h5>Libros + Normas</h5></div>
+                </label>
+            </div>
+            
+            <div class="db-option-card">
+                <input type="radio" name="base" value="cat" id="cat-avanzada" class="db-radio" onchange="toggleTipoDocumento(this.value)">
+                <label for="cat-avanzada" class="db-card-label">
+                    <div class="db-icon"><i class="fas fa-book"></i></div>
+                    <div class="db-info"><h5>Libros</h5></div>
+                </label>
+            </div>
+            
+            <div class="db-option-card">
+                <input type="radio" name="base" value="kardex" id="kardex-avanzada" class="db-radio" onchange="toggleTipoDocumento(this.value)">
+                <label for="kardex-avanzada" class="db-card-label">
+                    <div class="db-icon"><i class="fas fa-newspaper"></i></div>
+                    <div class="db-info"><h5>Revistas</h5></div>
+                </label>
+            </div>
+            
+            <div class="db-option-card">
+                <input type="radio" name="base" value="norma" id="norma-avanzada" class="db-radio" onchange="toggleTipoDocumento(this.value)">
+                <label for="norma-avanzada" class="db-card-label">
+                    <div class="db-icon"><i class="fas fa-file-alt"></i></div>
+                    <div class="db-info"><h5>Normas</h5></div>
+                </label>
+            </div>
+        </div>
+		
+		<div class="search-hint" id="db-hint-avanzada" style="margin-top: 6px; margin-bottom: 18px;">
+			<i class="fas fa-lightbulb"></i> <span id="db-hint-text-avanzada">Contiene libros, documentos, monografías, artículos, tesis, etc. También contiene normas sin acceso al documento</span>
+		</div>
+		
+    </div>
+
+	<div class="advanced-form-group">
+        <label class="advanced-form-label" for="input-titulo" id="label-titulo"><i class="fas fa-book-open" aria-hidden="true" style="color: var(--primary);"></i> Título</label>
+        <input type="text" id="input-titulo" name="titulo" class="advanced-form-control">
+    </div>
+    
+    <div class="advanced-form-group">
+        <label class="advanced-form-label" for="input-autor" id="label-autor"><i class="fas fa-user-tie" aria-hidden="true" style="color: var(--primary);"></i> Autor o Institución</label>
+        <input type="text" id="input-autor" name="autor" class="advanced-form-control">
+    </div>
+
+    <div class="advanced-form-group" id="group-anio-issn">
+        <label class="advanced-form-label" for="input-anio-issn" id="label-anio-issn"><i class="fas fa-calendar-alt" aria-hidden="true" style="color: var(--primary);"></i> Año</label>
+        <input type="text" name="anio" id="input-anio-issn" class="advanced-form-control" placeholder="">
+    </div>
+    
+    <div class="advanced-form-group" style="position: relative;">
+		<label class="advanced-form-label" for="input-tema"><i class="fas fa-tags" aria-hidden="true" style="color: var(--primary);"></i> Palabras Clave</label>
+		<input type="text" id="input-tema" name="tema" class="advanced-form-control" autocomplete="off">
+		<ul id="sugerencias-tesauro-tema" class="sugerencias-lista" style="display: none;"></ul>
+	</div>
+
+    <div class="advanced-form-group">
+        <label class="advanced-form-label"><i class="fas fa-language" style="color: var(--primary);"></i> Idioma</label>
+        <select name="idioma" class="advanced-form-control">
+            <option value="">Cualquier idioma</option>
+            <option value="spa or es">Español</option>
+            <option value="eng or en">Inglés</option>
+            <option value="ger or de">Alemán</option>
+            <option value="fra or fr">Francés</option>
+            <option value="ita or it">Italiano</option>
+            <option value="por or pt">Portugués</option>
+        </select>
+    </div>
+
+    <div class="advanced-form-group" id="group-tipo-doc">
+        <label class="advanced-form-label"><i class="fas fa-file-alt" style="color: var(--primary);"></i> Tipo de Documento</label>
+        <select name="tipo_doc" class="advanced-form-control">
+            <option value="">Cualquier tipo</option>
+            <option value="Abstracts">Abstracts</option>
+            <option value="Advance">Advance</option>
+            <option value="Anales">Anales</option>
+            <option value="Artículo">Artículo</option>
+            <option value="Bibliografía">Bibliografía</option>
+            <option value="Boletín">Boletín</option>
+            <option value="Capítulo">Capítulo</option>
+            <option value="Capítulo de libro">Capítulo de libro</option>
+            <option value="Catálogo">Catálogo</option>
+            <option value="Código">Código</option>
+            <option value="Conferencia">Conferencia</option>
+            <option value="Congreso">Congreso</option>
+            <option value="Cuaderno de trabajo">Cuaderno de trabajo</option>
+            <option value="Curso">Curso</option>
+            <option value="Diccionario">Diccionario</option>
+            <option value="Directorio">Directorio</option>
+            <option value="Disco óptico">Disco óptico</option>
+            <option value="Documento de conferencia">Documento de conferencia</option>
+            <option value="Enciclopedia">Enciclopedia</option>
+            <option value="Especificación">Especificación</option>
+            <option value="Estadística">Estadística</option>
+            <option value="Farmacopea">Farmacopea</option>
+            <option value="Folleto">Folleto</option>
+            <option value="Fotos">Fotos</option>
+            <option value="Guía">Guía</option>
+            <option value="Índice">Índice</option>
+            <option value="Informe">Informe</option>
+            <option value="Legislación">Legislación</option>
+            <option value="Libro">Libro</option>
+            <option value="Libro electrónico">Libro electrónico</option>
+            <option value="Manual">Manual</option>
+            <option value="Material cartográfico">Material cartográfico</option>
+            <option value="Memoria">Memoria</option>
+            <option value="Método de análisis">Método de análisis</option>
+            <option value="Monografía">Monografía</option>
+            <option value="Nomenclatura">Nomenclatura</option>
+            <option value="Norma">Norma</option>
+            <option value="Obra de referencia">Obra de referencia</option>
+            <option value="Patente">Patente</option>
+            <option value="Póster">Póster</option>
+            <option value="Presentación">Presentación</option>
+            <option value="Proyecto">Proyecto</option>
+            <option value="Reseña">Reseña</option>
+            <option value="Reunión">Reunión</option>
+            <option value="Revista">Revista</option>
+            <option value="Seminario">Seminario</option>
+            <option value="Serie monográfica">Serie monográfica</option>
+            <option value="Tablas">Tablas</option>
+            <option value="Tesauro">Tesauro</option>
+            <option value="Tesina">Tesina</option>
+            <option value="Tesis">Tesis</option>
+            <option value="Tesis de doctorado">Tesis de doctorado</option>
+            <option value="Tesis de grado">Tesis de grado</option>
+            <option value="Tesis de maestría">Tesis de maestría</option>
+            <option value="Vocabulario">Vocabulario</option>
+        </select>
+    </div>
+
+	<div class="advanced-form-actions" style="justify-content: space-between; align-items: center;">
+		<label style="display: flex; align-items: center; gap: 4px; font-size: 0.9rem; color: #555; cursor: pointer;">
+			<input type="checkbox" name="filtro_inti" id="filtro_inti" value="INTI" style="width: 16px; height: 16px; accent-color: var(--primary); cursor: pointer;">
+			<i style="color: var(--primary); font-size: 0.85rem;"></i> <strong>Mostrar sólo trabajos producidos por el INTI</strong>
+		</label>
+		<div style="display: flex; gap: 10px;">
+			<button type="reset" class="btn btn-secondary" onclick="setTimeout(() => toggleTipoDocumento('inti'), 10)">
+				<i class="fas fa-eraser"></i> Limpiar
+			</button>
+			<button type="submit" class="btn btn-primary">
+				<i class="fas fa-search"></i> Buscar
+			</button>
+		</div>
+	</div>
+</form>
+</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="fuentes" class="page-section hidden">
+			<section class="fuentes-hero">
+				<div class="container">
+					<h1>Guía de Fuentes de Información</h1>
+					<p>Encuentre recursos validados de información científica, técnica e industrial para su investigación.</p>
+				</div>
+			</section>
+
+            <div class="fuentes-main-container">
+                <div class="fuentes-content-container">
+                    <div class="fuentes-left-column">
+                        <div class="fuentes-column-title">
+                            <i class="fas fa-list-ul"></i> Búsqueda por menú
+                        </div>
+
+                        <div class="fuentes-menu-container">
+                            <div class="fuentes-menu-option primeras-ppales color-nivel-1">
+                                <div class="fuentes-option-content clickable-toggle-fuentes">
+                                    <span class="fuentes-option-text"><i class="fas fa-book"></i> Artículos, revistas, libros, etc.</span>
+                                    <span class="fuentes-submenu-toggle-arrow"><i class="fas fa-chevron-right"></i></span>
+                                </div>
+
+                                <div class="fuentes-submenu">
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=BDBMUL/(60)%20or%20BDBREG/(60)%20or%20BDBALI/(60)%20or%20BDBELI/(60)%20or%20BDBENA/(60)%20or%20BDBING/(60)%20or%20BDBMEB/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-database"></i> Bases de datos bibliográficos</span>
+                                        </div>
+                                        <span class="fuentes-option-note">Permiten buscar registros bibliográficos de documentos. A veces tienen enlaces a textos completos.</span>
+                                    </a>
+                                    
+                                    <div class="fuentes-menu-option primeras-ppales color-nivel-3">
+                                        <div class="fuentes-option-content clickable-toggle-fuentes">
+                                            <span class="fuentes-option-text"><i class="fas fa-book-open"></i> Bibliotecas virtuales y repositorios</span>
+                                            <span class="fuentes-submenu-toggle-arrow"><i class="fas fa-chevron-right"></i></span>
+                                        </div>
+                                        <span class="fuentes-option-note">Los repositorios son de libre acceso. Las bibliotecas virtuales pueden tener acceso abierto o restringido.</span>
+                                        <div class="fuentes-sub-submenu">
+                                            <a class="fuentes-menu-option primeras-ppales color-nivel-4" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=BVICYT/(60)', this); return false;">
+                                                <div class="fuentes-option-content">
+                                                    <span class="fuentes-option-text"><i class="fas fa-flask"></i> Especializ. en CyT</span>
+                                                </div>
+                                            </a>
+                                            <a class="fuentes-menu-option primeras-ppales color-nivel-4" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=BVIGEN/(60)', this); return false;">
+                                                <div class="fuentes-option-content">
+                                                    <span class="fuentes-option-text"><i class="fas fa-globe"></i> Generales</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=CCOLLI/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-book"></i> Catálogos colectivos de libros</span>
+                                        </div>
+                                        <span class="fuentes-option-note">Informan sobre libros existentes en redes de bibliotecas.</span>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=CCOLPP/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-newspaper"></i> Catálogos colectivos de revistas</span>
+                                        </div>
+                                        <span class="fuentes-option-note">Informan sobre pub. periódicas. Existentes en redes de bibliotecas.</span>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=CATBIB/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-university"></i> Catálogos de bibliotecas individuales</span>
+                                        </div>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=HEMVIR/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-archive"></i> Hemerotecas virtuales (revistas)</span>
+                                        </div>
+                                        <span class="fuentes-option-note">Permiten buscar publicaciones periódicas. A veces se puede acceder a los artículos.</span>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=CATLIB/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-shopping-cart"></i> Librerías y editoriales</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="fuentes-menu-option primeras-ppales color-nivel-1">
+                                <div class="fuentes-option-content clickable-toggle-fuentes">
+                                    <span class="fuentes-option-text"><i class="fas fa-search"></i> Buscadores de Internet</span>
+                                    <span class="fuentes-submenu-toggle-arrow"><i class="fas fa-chevron-right"></i></span>
+                                </div>
+                                <div class="fuentes-submenu">
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=MOTCYT/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-flask"></i> Especializados en CyT</span>
+                                        </div>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=MOTGEN/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-globe"></i> Generales</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <a class="fuentes-menu-option primeras-ppales color-nivel-2" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=DATABI/(60)%20or%20ESTADI/(60)', this); return false;">
+                                <div class="fuentes-option-content">
+                                    <span class="fuentes-option-text"><i class="fas fa-chart-bar"></i> Datos estadísticos y datos abiertos</span>
+                                </div>
+                            </a>
+                            
+                            <a class="fuentes-menu-option primeras-ppales color-nivel-2" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=DICCIO/(60)%20or%20TRADUC/(60)%20or%20TESAUR/(60)', this); return false;">
+                                <div class="fuentes-option-content">
+                                    <span class="fuentes-option-text"><i class="fas fa-book"></i> Diccionarios, traductores y tesauros</span>
+                                </div>
+                            </a>
+                            
+                            <a class="fuentes-menu-option primeras-ppales color-nivel-2" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=ENCICL/(60)%20or%20MAPASX/(60)', this); return false;">
+                                <div class="fuentes-option-content">
+                                    <span class="fuentes-option-text"><i class="fas fa-atlas"></i> Enciclopedias y mapas</span>
+                                </div>
+                            </a>
+                            
+                            <div class="fuentes-menu-option primeras-ppales color-nivel-1">
+                                <div class="fuentes-option-content clickable-toggle-fuentes">
+                                    <span class="fuentes-option-text"><i class="fas fa-address-book"></i> Guías de empresas, entidades, personas, teléf., etc.</span>
+                                    <span class="fuentes-submenu-toggle-arrow"><i class="fas fa-chevron-right"></i></span>
+                                </div>
+                                <div class="fuentes-submenu">
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=GUIEMP/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-building"></i> Guías de empresas</span>
+                                        </div>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=GUIENT/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-landmark"></i> Guías de entidades e instituciones</span>
+                                        </div>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=GUITEL/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-phone"></i> Guías de teléfonos y números postales</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="fuentes-menu-option primeras-ppales color-nivel-1">
+                                <div class="fuentes-option-content clickable-toggle-fuentes">
+                                    <span class="fuentes-option-text"><i class="fas fa-file-alt"></i> Normas técnicas</span>
+                                    <span class="fuentes-submenu-toggle-arrow"><i class="fas fa-chevron-right"></i></span>
+                                </div>
+                                <div class="fuentes-submenu">
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=ORGNOR/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-cogs"></i> Organismos de normalización</span>
+                                        </div>
+                                        <span class="fuentes-option-note">Generalmente incluyen el catálogo de normas de la entidad</span>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=CATNOR/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-store"></i> Vendedores de normas</span>
+                                        </div>
+                                        <span class="fuentes-option-note">Sirven para buscar o comprar normas de diversos orígenes</span>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=NORMAS/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-file-download"></i> Normas y regulaciones en texto completo gratis</span>
+                                        </div>
+                                    </a>
+                                    <div class="fuentes-submenu-note bottom-note">Véase además: Legislación</div>
+                                </div>
+                            </div>
+
+                            <a class="fuentes-menu-option primeras-ppales color-nivel-2" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=PATENT/(60)%20or%20BDBPAT/(60)', this); return false;">
+                                <div class="fuentes-option-content">
+                                    <span class="fuentes-option-text"><i class="fas fa-certificate"></i> Patentes</span>
+                                </div>
+                            </a>
+                            
+                            <a class="fuentes-menu-option primeras-ppales color-nivel-2" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=TESISX/(60)%20or%20INFRMS/(60)', this); return false;">
+                                <div class="fuentes-option-content">
+                                    <span class="fuentes-option-text"><i class="fas fa-graduation-cap"></i> Tesis e informes técnicos</span>
+                                </div>
+                            </a>
+
+                            <a class="fuentes-menu-option primeras-ppales color-nivel-2" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=CAPACI/(60)', this); return false;">
+                                <div class="fuentes-option-content">
+                                    <span class="fuentes-option-text"><i class="fas fa-graduation-cap"></i> Formación y capacitación en CyT</span>
+                                </div>
+                            </a>
+
+                            <a class="fuentes-menu-option primeras-ppales color-nivel-2" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=HERINV/(60)', this); return false;">
+                                <div class="fuentes-option-content">
+                                    <span class="fuentes-option-text"><i class="fas fa-tools"></i> Herramientas para investigadores</span>
+                                </div>
+                            </a>
+                            <div class="fuentes-menu-option primeras-ppales color-nivel-1">
+                                <div class="fuentes-option-content clickable-toggle-fuentes">
+                                    <span class="fuentes-option-text"><i class="fas fa-th-large"></i> Recursos por área temática</span>
+                                    <span class="fuentes-submenu-toggle-arrow"><i class="fas fa-chevron-right"></i></span>
+                                </div>
+                                <div class="fuentes-submenu">
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=ALIMEN/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-utensils"></i> Alimentos</span>
+                                        </div>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=AMBIEN/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-leaf"></i> Ambiente</span>
+                                        </div>
+                                    </a>
+                                    
+                                    <div class="fuentes-menu-option primeras-ppales color-nivel-3">
+                                        <div class="fuentes-option-content clickable-toggle-fuentes">
+                                            <span class="fuentes-option-text"><i class="fas fa-book-reader"></i> Bibliotecología y Ciencia de la Información</span>
+                                            <span class="fuentes-submenu-toggle-arrow"><i class="fas fa-chevron-right"></i></span>
+                                        </div>
+                                        <div class="fuentes-sub-submenu">
+                                            <a class="fuentes-menu-option primeras-ppales color-nivel-4" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=BIBORG/(60)', this); return false;">
+                                                <div class="fuentes-option-content">
+                                                    <span class="fuentes-option-text"><i class="fas fa-sitemap"></i> Organizaciones y asociaciones</span>
+                                                </div>
+                                            </a>
+                                            <a class="fuentes-menu-option primeras-ppales color-nivel-4" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=BIBREV/(60)', this); return false;">
+                                                <div class="fuentes-option-content">
+                                                    <span class="fuentes-option-text"><i class="fas fa-newspaper"></i> Revistas de acceso libre</span>
+                                                </div>
+                                            </a>
+                                            <a class="fuentes-menu-option primeras-ppales color-nivel-4" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=BIBVAR/(60)', this); return false;">
+                                                <div class="fuentes-option-content">
+                                                    <span class="fuentes-option-text"><i class="fas fa-users"></i> Recursos para profesionales e investigadores</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=BIOTEC/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-dna"></i> Biotecnología</span>
+                                        </div>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=CALIDA/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-check-circle"></i> Calidad</span>
+                                        </div>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=CONSTR/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-ruler-combined"></i> Construcciones, Arquitectura y Diseño</span>
+                                        </div>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=ECONOM/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-chart-line"></i> Economía y Comercio Exterior</span>
+                                        </div>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=COMPUT/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-laptop"></i> Electrónica, Informática y Telecomunicaciones</span>
+                                        </div>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=ENERGI/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-bolt"></i> Energía</span>
+                                        </div>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=FISICA/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-atom"></i> Física y Metrología</span>
+                                        </div>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=LEGISL/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-balance-scale"></i> Legislación</span>
+                                        </div>
+                                    </a>
+
+                                    <div class="fuentes-menu-option primeras-ppales color-nivel-3">
+                                        <div class="fuentes-option-content clickable-toggle-fuentes">
+                                            <span class="fuentes-option-text"><i class="fas fa-language"></i> Lengua</span>
+                                            <span class="fuentes-submenu-toggle-arrow"><i class="fas fa-chevron-right"></i></span>
+                                        </div>
+                                        <div class="fuentes-sub-submenu">
+                                            <a class="fuentes-menu-option primeras-ppales color-nivel-4" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=DICCIO/(60)', this); return false;">
+                                                <div class="fuentes-option-content">
+                                                    <span class="fuentes-option-text"><i class="fas fa-book"></i> Diccionarios y glosarios</span>
+                                                </div>
+                                            </a>
+                                            <a class="fuentes-menu-option primeras-ppales color-nivel-4" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=GRAMAT/(60)', this); return false;">
+                                                <div class="fuentes-option-content">
+                                                    <span class="fuentes-option-text"><i class="fas fa-spell-check"></i> Gramática</span>
+                                                </div>
+                                            </a>
+                                            <a class="fuentes-menu-option primeras-ppales color-nivel-4" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=SIGLAR/(60)', this); return false;">
+                                                <div class="fuentes-option-content">
+                                                    <span class="fuentes-option-text"><i class="fas fa-spell-check"></i> Siglarios</span>
+                                                </div>
+                                            </a>
+                                            <a class="fuentes-menu-option primeras-ppales color-nivel-4" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=TESAUR/(60)', this); return false;">
+                                                <div class="fuentes-option-content">
+                                                    <span class="fuentes-option-text"><i class="fas fa-list-ol"></i> Tesauros</span>
+                                                </div>
+                                            </a>
+                                            <a class="fuentes-menu-option primeras-ppales color-nivel-4" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=TRADUC/(60)', this); return false;">
+                                                <div class="fuentes-option-content">
+                                                    <span class="fuentes-option-text"><i class="fas fa-exchange-alt"></i> Traductores</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=MATEMA/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-square-root-alt"></i> Matemáticas</span>
+                                        </div>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=CUEROS/(60)%20or%20MATCON/(60)%20or%20MATOTR/(60)%20or%20METALE/(60)%20or%20PLACAU/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-cube"></i> Materiales</span>
+                                        </div>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=HIGSEG/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-user-md"></i> Medicina, Biología, Higiene y Seguridad</span>
+                                        </div>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=POLCYT/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-chart-pie"></i> Políticas e indicadores en CyT</span>
+                                        </div>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=QUIFAR/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-pills"></i> Química, Farmacia y Cosmética</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="fuentes-menu-option primeras-ppales color-nivel-1">
+                                <div class="fuentes-option-content clickable-toggle-fuentes">
+                                    <span class="fuentes-option-text"><i class="fas fa-sitemap"></i> Sitios de organismos y entidades</span>
+                                    <span class="fuentes-submenu-toggle-arrow"><i class="fas fa-chevron-right"></i></span>
+                                </div>
+                                <div class="fuentes-submenu">
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=CAMARG/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-building"></i> Cámaras, org. empresarias y profesionales</span>
+                                        </div>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=ORCTAR/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-flag"></i> Entidades argentinas de CyT</span>
+                                        </div>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=ORCTEX/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-globe-americas"></i> Entidades extranjeras de CyT</span>
+                                        </div>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=GOBNAC/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-landmark"></i> Gobierno nacional</span>
+                                        </div>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=GOBPRO/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-city"></i> Gobiernos provinciales y municipales</span>
+                                        </div>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=ORGACR/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-clipboard-check"></i> Organismos de acreditación y calidad en laboratorios</span>
+                                        </div>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=ORGMET/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-balance-scale-right"></i> Organismos de metrología</span>
+                                        </div>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=ORGNOR/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-cogs"></i> Organismos de normalización</span>
+                                        </div>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=ORGVAR/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-globe"></i> Organizaciones internacionales varias</span>
+                                        </div>
+                                    </a>
+                                    <a class="fuentes-menu-option primeras-ppales color-nivel-3" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-listado.xis&inf=1&sup=100&base=fueint&bool=PARINC/(60)', this); return false;">
+                                        <div class="fuentes-option-content">
+                                            <span class="fuentes-option-text"><i class="fas fa-industry"></i> Parques industriales e incubadoras de empresas</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fuentes-right-column">
+                        <div class="fuentes-right-column-content">
+                            <div class="fuentes-column-title">
+                                <i class="fas fa-search"></i> Búsqueda por nombres de los sitios incluidos en esta Guía
+                            </div>
+                            
+                            <div class="fuentes-form-note">
+                                Ej.: ingrese GOOGLE o GOOGLE ACADÉMICO para encontrar la dirección de Google Académico, SECRETARÍA para buscar sitios de Secretarías de Estado, etc.
+                            </div>
+
+                            <div class="fuentes-search-form">
+                                <form action="#" onsubmit="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-busqueda.xis&base=fueint&inf=1&sup=80&sup2=50&tema=' + encodeURIComponent(this.querySelector('input[name=tema]').value), this); return false;">
+                                    <div class="fuentes-form-group">
+                                        <input type="text" name="tema" class="fuentes-search-input" placeholder="Escriba palabras para buscar" required>
+                                    </div>
+                                    
+                                    <div class="fuentes-search-buttons">
+                                        <button type="submit" class="btn btn-primary">
+                                            <i class="fas fa-search"></i> Buscar
+                                        </button>
+                                        <button type="reset" class="btn btn-secondary">
+                                            <i class="fas fa-eraser"></i> Limpiar
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            
+                            <div class="fuentes-index-title">
+                                <i class="fas fa-sort-alpha-down"></i> Índice alfabético de sitios
+                            </div>
+                            
+                            <div class="fuentes-index-table-container">
+                                <div class="fuentes-alpha-grid">
+                                    <a class="fuentes-alpha-item" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-indice.xis&amp;inf=1&amp;sup=100&amp;busca1=TI=A&amp;base=fueint', this); return false;">
+                                        <span class="fuentes-sin-subrayado">A</span>
+                                    </a>
+                                    <a class="fuentes-alpha-item" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-indice.xis&amp;inf=1&amp;sup=100&amp;busca1=TI=B&amp;base=fueint', this); return false;">
+                                        <span class="fuentes-sin-subrayado">B</span>
+                                    </a>
+                                    <a class="fuentes-alpha-item" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-indice.xis&amp;inf=1&amp;sup=100&amp;busca1=TI=C&amp;base=fueint', this); return false;">
+                                        <span class="fuentes-sin-subrayado">C</span>
+                                    </a>
+                                    <a class="fuentes-alpha-item" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-indice.xis&amp;inf=1&amp;sup=100&amp;busca1=TI=D&amp;base=fueint', this); return false;">
+                                        <span class="fuentes-sin-subrayado">D</span>
+                                    </a>
+                                    <a class="fuentes-alpha-item" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-indice.xis&amp;inf=1&amp;sup=100&amp;busca1=TI=E&amp;base=fueint', this); return false;">
+                                        <span class="fuentes-sin-subrayado">E</span>
+                                    </a>
+                                    <a class="fuentes-alpha-item" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-indice.xis&amp;inf=1&amp;sup=100&amp;busca1=TI=F&amp;base=fueint', this); return false;">
+                                        <span class="fuentes-sin-subrayado">F</span>
+                                    </a>
+                                    <a class="fuentes-alpha-item" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-indice.xis&amp;inf=1&amp;sup=100&amp;busca1=TI=G&amp;base=fueint', this); return false;">
+                                        <span class="fuentes-sin-subrayado">G</span>
+                                    </a>
+                                </div>
+                                
+                                <div class="fuentes-alpha-grid">
+                                    <a class="fuentes-alpha-item" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-indice.xis&amp;inf=1&amp;sup=100&amp;busca1=TI=H&amp;base=fueint', this); return false;">
+                                        <span class="fuentes-sin-subrayado">H</span>
+                                    </a>
+                                    <a class="fuentes-alpha-item" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-indice.xis&amp;inf=1&amp;sup=100&amp;busca1=TI=I&amp;base=fueint', this); return false;">
+                                        <span class="fuentes-sin-subrayado">I</span>
+                                    </a>
+                                    <a class="fuentes-alpha-item" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-indice.xis&amp;inf=1&amp;sup=100&amp;busca1=TI=J&amp;base=fueint', this); return false;">
+                                        <span class="fuentes-sin-subrayado">J</span>
+                                    </a>
+                                    <a class="fuentes-alpha-item" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-indice.xis&amp;inf=1&amp;sup=100&amp;busca1=TI=K&amp;base=fueint', this); return false;">
+                                        <span class="fuentes-sin-subrayado">K</span>
+                                    </a>
+                                    <a class="fuentes-alpha-item" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-indice.xis&amp;inf=1&amp;sup=100&amp;busca1=TI=L&amp;base=fueint', this); return false;">
+                                        <span class="fuentes-sin-subrayado">L</span>
+                                    </a>
+                                    <a class="fuentes-alpha-item" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-indice.xis&amp;inf=1&amp;sup=100&amp;busca1=TI=M&amp;base=fueint', this); return false;">
+                                        <span class="fuentes-sin-subrayado">M</span>
+                                    </a>
+                                    <a class="fuentes-alpha-item" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-indice.xis&amp;inf=1&amp;sup=100&amp;busca1=TI=N&amp;base=fueint', this); return false;">
+                                        <span class="fuentes-sin-subrayado">N</span>
+                                    </a>
+                                </div>
+                                
+                                <div class="fuentes-alpha-grid">
+                                    <a class="fuentes-alpha-item" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-indice.xis&amp;inf=1&amp;sup=100&amp;busca1=TI=O&amp;base=fueint', this); return false;">
+                                        <span class="fuentes-sin-subrayado">O</span>
+                                    </a>
+                                    <a class="fuentes-alpha-item" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-indice.xis&amp;inf=1&amp;sup=100&amp;busca1=TI=P&amp;base=fueint', this); return false;">
+                                        <span class="fuentes-sin-subrayado">P</span>
+                                    </a>
+                                    <a class="fuentes-alpha-item" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-indice.xis&amp;inf=1&amp;sup=100&amp;busca1=TI=Q&amp;base=fueint', this); return false;">
+                                        <span class="fuentes-sin-subrayado">Q</span>
+                                    </a>
+                                    <a class="fuentes-alpha-item" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-indice.xis&amp;inf=1&amp;sup=100&amp;busca1=TI=R&amp;base=fueint', this); return false;">
+                                        <span class="fuentes-sin-subrayado">R</span>
+                                    </a>
+                                    <a class="fuentes-alpha-item" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-indice.xis&amp;inf=1&amp;sup=100&amp;busca1=TI=S&amp;base=fueint', this); return false;">
+                                        <span class="fuentes-sin-subrayado">S</span>
+                                    </a>
+                                    <a class="fuentes-alpha-item" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-indice.xis&amp;inf=1&amp;sup=100&amp;busca1=TI=T&amp;base=fueint', this); return false;">
+                                        <span class="fuentes-sin-subrayado">T</span>
+                                    </a>
+                                    <a class="fuentes-alpha-item" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-indice.xis&amp;inf=1&amp;sup=100&amp;busca1=TI=U&amp;base=fueint', this); return false;">
+                                        <span class="fuentes-sin-subrayado">U</span>
+                                    </a>
+                                </div>
+                                
+                                <div class="fuentes-alpha-grid fuentes-alpha-grid-last">
+                                    <a class="fuentes-alpha-item" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-indice.xis&amp;inf=1&amp;sup=100&amp;busca1=TI=V&amp;base=fueint', this); return false;">
+                                        <span class="fuentes-sin-subrayado">V</span>
+                                    </a>
+                                    <a class="fuentes-alpha-item" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-indice.xis&amp;inf=1&amp;sup=100&amp;busca1=TI=W&amp;base=fueint', this); return false;">
+                                        <span class="fuentes-sin-subrayado">W</span>
+                                    </a>
+                                    <a class="fuentes-alpha-item" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-indice.xis&amp;inf=1&amp;sup=100&amp;busca1=TI=X&amp;base=fueint', this); return false;">
+                                        <span class="fuentes-sin-subrayado">X</span>
+                                    </a>
+                                    <a class="fuentes-alpha-item" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-indice.xis&amp;inf=1&amp;sup=100&amp;busca1=TI=Y&amp;base=fueint', this); return false;">
+                                        <span class="fuentes-sin-subrayado">Y</span>
+                                    </a>
+                                    <a class="fuentes-alpha-item" href="#" onclick="openFuentesModal('../../cgi-bin/wxis/wxis.exe?IsisScript=fuentes-indice.xis&amp;inf=1&amp;sup=100&amp;busca1=TI=Z&amp;base=fueint', this); return false;">
+                                        <span class="fuentes-sin-subrayado">Z</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		<div id="diccionarios" class="page-section hidden">
+		<section class="diccionarios-hero">
+			<div class="container">
+				<h1>Diccionarios T&eacute;cnicos</h1>
+				<p>Consulte los t&eacute;rminos de nuestras colecciones utilizando sus <strong style="white-space: nowrap;">buscadores independientes</strong>.</p>
+			</div>
+		</section>
+
+		<div class="diccionarios-main-container">
+			<div class="diccionarios-grid">
+
+				<div class="diccionario-card">
+					<div class="card-header">
+						<div class="dicc-title-group">
+							<h3><i class="fas fa-mountain"></i> Cobre</h3>
+							<span class="dicc-subtitle">Metalurgia del Cobre</span>
+						</div>
+						<button type="button" class="resena-badge" onclick="toggleResenaDicc(this)" title="Ver información de esta colección">
+							<i class="fas fa-info-circle"></i>
+						</button>
+					</div>
+
+					<div class="diccionario-resena">
+						<p><strong>Autores:</strong> Carlos D'Orio, M&oacute;nica Zein, Clara M. Cabrera</p>
+						<p>El prop&oacute;sito a que se ha ajustado la presente obra ha sido reunir en un volumen manuable el m&aacute;s nutrido, completo y correcto vocabulario t&eacute;cnico de los idiomas espa&ntilde;ol, portugu&eacute;s e ingl&eacute;s referido al &aacute;mbito de la metalurgia del cobre y trazado sobre un patr&oacute;n moderno y exacto.</p>
+						<p>Este trabajo, basado en el convencimiento de que la verdadera utilidad de todo diccionario consiste en dar equivalencias en lugar de definiciones, ha hecho necesaria una cuidadosa labor de investigaci&oacute;n para hallar los equivalentes exactos en cada lengua.</p>
+						<p>Es mi opini&oacute;n que esta obra viene a llenar un vac&iacute;o en el conocimiento de la metalurgia y que los objetivos y la finalidad que inspiraron a los autores han sido cumplidos holgadamente. <br><br><i>Mario Quinteiro</i></p>
+					</div>
+
+					<form onsubmit="return submitSearch(this)" action="/cgi-bin/wxis/wxis.exe" accept-charset="iso-8859-1" method="get" target="resultsFrame">
+						<input type="hidden" name="IsisScript" value="diccionarios.xis">
+						<input type="hidden" name="tag9" value="/isis/cobre/cobre" />
+						<input type="hidden" name="tag10" value="1">
+						<input type="hidden" name="tag11" value="50">
+						
+						<div class="diccionario-form-row">
+							<label class="advanced-form-label">T&eacute;rmino de b&uacute;squeda</label>
+							<input type="text" name="tag1" class="advanced-form-control" placeholder="Ej: aleaci&oacute;n, smelting..." required />
+						</div>
+						
+						<div class="diccionario-form-row">
+							<label class="advanced-form-label">Idioma</label>
+							<select name="tag6" class="advanced-form-control">
+								<option value="">Todos los idiomas</option>
+								<option value="/(20)">Ingl&eacute;s</option>
+								<option value="/(30)">Portugu&eacute;s</option>
+								<option value="/(40)">Espa&ntilde;ol</option>
+							</select>
+						</div>
+						
+						<button type="submit" name="button" class="btn btn-primary btn-dicc">
+							<i class="fas fa-search"></i> Buscar en Cobre
+						</button>
+
+						<div class="toggle-avanzada-dicc" onclick="toggleAvanzadaDicc(this)">
+							<i class="fas fa-plus-circle"></i> B&uacute;squeda combinada
+						</div>
+
+						<div class="diccionario-avanzada">
+							<div class="toggle-ayuda-btn" onclick="toggleAyudaDicc(this)">
+								<i class="fas fa-question-circle"></i> &iquest;C&oacute;mo usar la b&uacute;squeda combinada?
+							</div>
+							<div class="ayuda-booleana">
+								&bull; <strong>Y (AND):</strong> Busca registros que contengan ambos t&eacute;rminos. Menos resultados, pero m&aacute;s precisos.<br>
+								&bull; <strong>O (OR):</strong> Busca registros que contengan cualquiera de los t&eacute;rminos. M&aacute;s resultados, pero menos precisos.<br>
+								&bull; <strong>SIN (NOT):</strong> Excluye el t&eacute;rmino que le sigue.
+							</div>
+
+							<div class="diccionario-form-row">
+								<select name="tag2" class="advanced-form-control" style="background-color: #e9ecef; font-weight: bold;">
+									<option value="and">Y (AND)</option>
+									<option value="or">O (OR)</option>
+									<option value="not">SIN (NOT)</option>
+								</select>
+							</div>
+							<div class="diccionario-form-row dicc-flex-row">
+								<input type="text" name="tag3" class="advanced-form-control" placeholder="Segundo t&eacute;rmino..." style="flex: 2;" />
+								<select name="tag7" class="advanced-form-control" style="flex: 1;">
+									<option value="">Todos</option>
+									<option value="/(20)">EN</option>
+									<option value="/(30)">PT</option>
+									<option value="/(40)">ES</option>
+								</select>
+							</div>
+							<hr style="border: 0; border-top: 1px dashed #ddd; margin: 15px 0;">
+							<div class="diccionario-form-row">
+								<select name="tag4" class="advanced-form-control" style="background-color: #e9ecef; font-weight: bold;">
+									<option value="and">Y (AND)</option>
+									<option value="or">O (OR)</option>
+									<option value="not">SIN (NOT)</option>
+								</select>
+							</div>
+							<div class="diccionario-form-row dicc-flex-row">
+								<input type="text" name="tag5" class="advanced-form-control" placeholder="Tercer t&eacute;rmino..." style="flex: 2;" />
+								<select name="tag8" class="advanced-form-control" style="flex: 1;">
+									<option value="">Todos</option>
+									<option value="/(20)">EN</option>
+									<option value="/(30)">PT</option>
+									<option value="/(40)">ES</option>
+								</select>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div class="diccionario-card">
+					<div class="card-header">
+						<div class="dicc-title-group">
+							<h3><i class="fas fa-industry"></i> Caucho</h3>
+							<span class="dicc-subtitle">Tecnología del Caucho</span>
+						</div>
+						<button type="button" class="resena-badge" onclick="toggleResenaDicc(this)" title="Ver información de esta colección">
+							<i class="fas fa-info-circle"></i>
+						</button>
+					</div>
+
+					<div class="diccionario-resena">
+						<p><strong>Autores:</strong> Mirta Amalia L&oacute;pez; M&oacute;nica Zein</p>
+						<p>De acuerdo con los objetivos de nuestra Biblioteca de brindar cada d&iacute;a un mejor servicio a nuestros usuarios, publicamos el "Diccionario Tecnol&oacute;gico del Caucho" en ingl&eacute;s-espa&ntilde;ol/espa&ntilde;ol-ingl&eacute;s bajo la supervisi&oacute;n de INTI-Caucho.</p>
+						<p>Este nuevo diccionario tiene como prop&oacute;sito facilitar la comprensi&oacute;n de la literatura t&eacute;cnica en idioma ingl&eacute;s sobre caucho y posee, adem&aacute;s, una lista de abreviaturas de ingredientes para formulaciones de caucho.</p>
+					</div>
+
+				<form onsubmit="return submitSearch(this)" action="/cgi-bin/wxis/wxis.exe" accept-charset="iso-8859-1" method="get" target="resultsFrame">
+					<input type="hidden" name="IsisScript" value="diccionarios.xis">
+					<input type="hidden" name="tag9" value="/isis/caucho/caucho" />
+					<input type="hidden" name="tag10" value="1">
+					<input type="hidden" name="tag11" value="50">
+						
+						<div class="diccionario-form-row">
+							<label class="advanced-form-label">T&eacute;rmino de b&uacute;squeda</label>
+							<input type="text" name="tag1" class="advanced-form-control" placeholder="Ej: vulcanizado, l&aacute;tex..." required />
+						</div>
+						
+						<div class="diccionario-form-row">
+							<label class="advanced-form-label">Idioma</label>
+							<select name="tag6" class="advanced-form-control">
+								<option value="">Todos los idiomas</option>
+								<option value="/(20)">Ingl&eacute;s</option>
+								<option value="/(40)">Espa&ntilde;ol</option>
+							</select>
+						</div>
+						
+						<button type="submit" name="button" class="btn btn-primary btn-dicc">
+							<i class="fas fa-search"></i> Buscar en Caucho
+						</button>
+
+						<div class="toggle-avanzada-dicc" onclick="toggleAvanzadaDicc(this)">
+							<i class="fas fa-plus-circle"></i> B&uacute;squeda combinada
+						</div>
+
+						<div class="diccionario-avanzada">
+							<div class="toggle-ayuda-btn" onclick="toggleAyudaDicc(this)">
+								<i class="fas fa-question-circle"></i> &iquest;C&oacute;mo usar la b&uacute;squeda combinada?
+							</div>
+							<div class="ayuda-booleana">
+								&bull; <strong>Y (AND):</strong> Busca registros que contengan ambos t&eacute;rminos. Menos resultados, pero m&aacute;s precisos.<br>
+								&bull; <strong>O (OR):</strong> Busca registros que contengan cualquiera de los t&eacute;rminos. M&aacute;s resultados, pero menos precisos.<br>
+								&bull; <strong>SIN (NOT):</strong> Excluye el t&eacute;rmino que le sigue.
+							</div>
+
+							<div class="diccionario-form-row">
+								<select name="tag2" class="advanced-form-control" style="background-color: #e9ecef; font-weight: bold;">
+									<option value="and">Y (AND)</option>
+									<option value="or">O (OR)</option>
+									<option value="not">SIN (NOT)</option>
+								</select>
+							</div>
+							<div class="diccionario-form-row dicc-flex-row">
+								<input type="text" name="tag3" class="advanced-form-control" placeholder="Segundo t&eacute;rmino..." style="flex: 2;" />
+								<select name="tag7" class="advanced-form-control" style="flex: 1;">
+									<option value="">Todos</option>
+									<option value="/(20)">EN</option>
+									<option value="/(40)">ES</option>
+								</select>
+							</div>
+							<hr style="border: 0; border-top: 1px dashed #ddd; margin: 15px 0;">
+							<div class="diccionario-form-row">
+								<select name="tag4" class="advanced-form-control" style="background-color: #e9ecef; font-weight: bold;">
+									<option value="and">Y (AND)</option>
+									<option value="or">O (OR)</option>
+									<option value="not">SIN (NOT)</option>
+								</select>
+							</div>
+							<div class="diccionario-form-row dicc-flex-row">
+								<input type="text" name="tag5" class="advanced-form-control" placeholder="Tercer t&eacute;rmino..." style="flex: 2;" />
+								<select name="tag8" class="advanced-form-control" style="flex: 1;">
+									<option value="">Todos</option>
+									<option value="/(20)">EN</option>
+									<option value="/(40)">ES</option>
+								</select>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div class="diccionario-card">
+					<div class="card-header">
+						<div class="dicc-title-group">
+							<h3><i class="fas fa-microscope"></i> E.N.D.</h3>
+							<span class="dicc-subtitle">Ensayos No Destructivos</span>
+						</div>
+						<button type="button" class="resena-badge" onclick="toggleResenaDicc(this)" title="Ver información de esta colección">
+							<i class="fas fa-info-circle"></i>
+						</button>
+					</div>
+
+					<div class="diccionario-resena">
+						<p><strong>Autores:</strong> Carlos D&rsquo;Orio, M&oacute;nica Zein y la Divisi&oacute;n de Ensayos No Destructivos de INTI-Mec&aacute;nica bajo la direcci&oacute;n del Ing. Alfredo Naucevich.</p>
+						<p>Este diccionario es triling&uuml;e (ingl&eacute;s-portugu&eacute;s-espa&ntilde;ol) y est&aacute; exclusivamente dedicado al &aacute;rea de ensayos no destructivos.</p>
+					</div>
+
+				<form onsubmit="return submitSearch(this)" action="/cgi-bin/wxis/wxis.exe" accept-charset="iso-8859-1" method="get" target="resultsFrame">
+					<input type="hidden" name="IsisScript" value="diccionarios.xis">
+					<input type="hidden" name="tag9" value="/isis/nodest/nodest" />
+					<input type="hidden" name="tag10" value="1">
+					<input type="hidden" name="tag11" value="50">
+						
+						<div class="diccionario-form-row">
+							<label class="advanced-form-label">T&eacute;rmino de b&uacute;squeda</label>
+							<input type="text" name="tag1" class="advanced-form-control" placeholder="Ej: ultrasonido, radiograf&iacute;a..." required />
+						</div>
+						
+						<div class="diccionario-form-row">
+							<label class="advanced-form-label">Idioma</label>
+							<select name="tag6" class="advanced-form-control">
+								<option value="">Todos los idiomas</option>
+								<option value="/(20)">Ingl&eacute;s</option>
+								<option value="/(30)">Portugu&eacute;s</option>
+								<option value="/(40)">Espa&ntilde;ol</option>
+							</select>
+						</div>
+						
+						<button type="submit" name="button" class="btn btn-primary btn-dicc">
+							<i class="fas fa-search"></i> Buscar en E.N.D.
+						</button>
+
+						<div class="toggle-avanzada-dicc" onclick="toggleAvanzadaDicc(this)">
+							<i class="fas fa-plus-circle"></i> B&uacute;squeda combinada
+						</div>
+
+						<div class="diccionario-avanzada">
+							<div class="toggle-ayuda-btn" onclick="toggleAyudaDicc(this)">
+								<i class="fas fa-question-circle"></i> &iquest;C&oacute;mo usar la b&uacute;squeda combinada?
+							</div>
+							<div class="ayuda-booleana">
+								&bull; <strong>Y (AND):</strong> Busca registros que contengan ambos t&eacute;rminos. Menos resultados, pero m&aacute;s precisos.<br>
+								&bull; <strong>O (OR):</strong> Busca registros que contengan cualquiera de los t&eacute;rminos. M&aacute;s resultados, pero menos precisos.<br>
+								&bull; <strong>SIN (NOT):</strong> Excluye el t&eacute;rmino que le sigue.
+							</div>
+
+							<div class="diccionario-form-row">
+								<select name="tag2" class="advanced-form-control" style="background-color: #e9ecef; font-weight: bold;">
+									<option value="and">Y (AND)</option>
+									<option value="or">O (OR)</option>
+									<option value="not">SIN (NOT)</option>
+								</select>
+							</div>
+							<div class="diccionario-form-row dicc-flex-row">
+								<input type="text" name="tag3" class="advanced-form-control" placeholder="Segundo t&eacute;rmino..." style="flex: 2;" />
+								<select name="tag7" class="advanced-form-control" style="flex: 1;">
+									<option value="">Todos</option>
+									<option value="/(20)">EN</option>
+									<option value="/(30)">PT</option>
+									<option value="/(40)">ES</option>
+								</select>
+							</div>
+							<hr style="border: 0; border-top: 1px dashed #ddd; margin: 15px 0;">
+							<div class="diccionario-form-row">
+								<select name="tag4" class="advanced-form-control" style="background-color: #e9ecef; font-weight: bold;">
+									<option value="and">Y (AND)</option>
+									<option value="or">O (OR)</option>
+									<option value="not">SIN (NOT)</option>
+								</select>
+							</div>
+							<div class="diccionario-form-row dicc-flex-row">
+								<input type="text" name="tag5" class="advanced-form-control" placeholder="Tercer t&eacute;rmino..." style="flex: 2;" />
+								<select name="tag8" class="advanced-form-control" style="flex: 1;">
+									<option value="">Todos</option>
+									<option value="/(20)">EN</option>
+									<option value="/(30)">PT</option>
+									<option value="/(40)">ES</option>
+								</select>
+							</div>
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+		<div id="novedades" class="page-section hidden">
+            <section class="noticias-hero">
+                <div class="container">
+                    <h1>Noticias y Novedades</h1>
+                    <p>Manténgase informado sobre las últimas incorporaciones, servicios y eventos de la Biblioteca.</p>
+                </div>
+            </section>
+
+            <div class="container" style="margin-top: 40px; max-width: 850px;">
+                <div id="news-feed" class="news-container"></div>
+            </div>
+        </div>
+		
+
+		<div id="faq" class="page-section hidden">
+            <section class="ayuda-hero">
+                <div class="container">
+                    <h1>Centro de Ayuda</h1>
+                    <p>Encuentre guías, trucos de búsqueda y aproveche al máximo nuestras colecciones.</p>
+                </div>
+            </section>
+
+            <div class="container ayuda-content-container">
+                
+                <div class="ayuda-buscador-moderno">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="ayudaSearch" placeholder="Escriba su pregunta o palabra..." onkeyup="filtrarAyuda()">
+                </div>
+                
+                <div class="ayuda-filtros-grid">
+                    <button class="ayuda-chip-rect active" onclick="filtrarCategoria('todas', this)">
+                        <i class="fas fa-layer-group"></i> Todas
+                    </button>
+                    <button class="ayuda-chip-rect" onclick="filtrarCategoria('institucional', this)">
+                        <i class="fas fa-building"></i> Biblioteca INTI
+                    </button>
+                    <button class="ayuda-chip-rect" onclick="filtrarCategoria('basico', this)">
+                        <i class="fas fa-mouse-pointer"></i> Búsqueda Básica
+                    </button>
+                    <button class="ayuda-chip-rect" onclick="filtrarCategoria('avanzado', this)">
+                        <i class="fas fa-sliders-h"></i> Búsqueda Avanzada
+                    </button>
+                    <button class="ayuda-chip-rect" onclick="filtrarCategoria('colecciones', this)">
+                        <i class="fas fa-book-open"></i> Colecciones y Normas
+                    </button>
+                    <button class="ayuda-chip-rect" onclick="filtrarCategoria('herramientas', this)">
+                        <i class="fas fa-tools"></i> Herramientas
+                    </button>
+                </div>
+
+                <div id="ayuda-lista-acordeones">
+				
+					<div class="ayuda-separador"><span>La Biblioteca</span></div>
+                    
+                    <div class="ayuda-card-acordeon" data-categoria="institucional" data-keywords="sobre biblioteca inti informacion contacto publico">
+                        <div class="ayuda-card-pregunta" onclick="this.parentElement.classList.toggle('open')">
+                            <span><i class="fas fa-angle-right text-primary"></i> Sobre la Biblioteca Central del INTI</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </div>
+                        <div class="ayuda-card-respuesta">
+                            <p>La Biblioteca Central del INTI es un centro de información especializado en ciencia, tecnología, industria y calidad, diseñado para apoyar la investigación y el desarrollo a nivel nacional.</p>
+                            <p>Brindamos servicios de referencia, búsquedas bibliográficas complejas, acceso a normas técnicas y a bases de datos nacionales e internacionales. Nuestro acervo está abierto tanto a los profesionales del Instituto como al público general, estudiantes e investigadores externos para consulta en sala.</p>
+                        </div>
+                    </div>
+
+                    <div class="ayuda-card-acordeon" data-categoria="institucional" data-keywords="donde queda ubicacion direccion mapa">
+                        <div class="ayuda-card-pregunta" onclick="this.parentElement.classList.toggle('open')">
+                            <span><i class="fas fa-angle-right text-primary"></i> ¿Dónde se encuentra ubicada la Biblioteca?</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </div>
+                        <div class="ayuda-card-respuesta">
+                            <p>Nuestra Biblioteca Central se encuentra dentro del Parque Tecnológico Miguelete (Av. Gral. Paz 5445, San Martín, Provincia de Buenos Aires), en el <strong>Edificio 5</strong>.</p>
+                            <p>Puede consultar el mapa interactivo en el pie de página (footer) de nuestro sitio web haciendo clic en "¿Cómo llegar?".</p>
+                        </div>
+                    </div>
+
+                    <div class="ayuda-card-acordeon" data-categoria="institucional" data-keywords="horarios dias atencion abierto cerrado">
+                        <div class="ayuda-card-pregunta" onclick="this.parentElement.classList.toggle('open')">
+                            <span><i class="fas fa-angle-right text-primary"></i> ¿Cuáles son los días y horarios de atención?</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </div>
+                        <div class="ayuda-card-respuesta">
+                            <p>Atendemos al público de manera presencial de <strong>lunes a viernes, de 08:30 a 16:00 hs.</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="ayuda-card-acordeon" data-categoria="institucional" data-keywords="quienes pueden usar asociarse prestamo publico general llevar">
+                        <div class="ayuda-card-pregunta" onclick="this.parentElement.classList.toggle('open')">
+                            <span><i class="fas fa-angle-right text-primary"></i> ¿Quiénes pueden utilizar la Biblioteca y cómo es la modalidad de préstamo?</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </div>
+                        <div class="ayuda-card-respuesta">
+                            <p>La biblioteca es <strong>pública y de acceso gratuito</strong>. Cualquier persona (investigadores, estudiantes, profesionales o público en general) puede consultar nuestro material in situ (en sala).</p>
+                            <p>Tenga en cuenta que los préstamos están reservados exclusivamente para el personal activo del INTI y los mismos son para llevar a los lugares de trabajo (no a domicilio).</p>
+                        </div>
+                    </div>
+
+                    <div class="ayuda-card-acordeon" data-categoria="institucional" data-keywords="comodidades wifi internet computadoras sala lectura">
+                        <div class="ayuda-card-pregunta" onclick="this.parentElement.classList.toggle('open')">
+                            <span><i class="fas fa-angle-right text-primary"></i> ¿Qué comodidades y servicios ofrece la sala de lectura?</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </div>
+                        <div class="ayuda-card-respuesta">
+                            <p>Nuestras instalaciones están preparadas para el estudio y la investigación. Ofrecemos:</p>
+                            <ul class="ayuda-lista-vineta">
+                                <li>Una sala de lectura silenciosa, climatizada y bien iluminada.</li>
+                                <li>Conexión Wi-Fi gratuita para visitantes.</li>
+                                <li>Computadoras de consulta pública con acceso directo a nuestras bases de datos y a la Biblioteca Electrónica de Ciencia y Tecnología (Mincyt).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="ayuda-card-acordeon" data-categoria="institucional" data-keywords="ayuda referencista personal bibliotecario asistencia buscar">
+                        <div class="ayuda-card-pregunta" onclick="this.parentElement.classList.toggle('open')">
+                            <span><i class="fas fa-angle-right text-primary"></i> ¿Puedo recibir ayuda para encontrar información específica?</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </div>
+                        <div class="ayuda-card-respuesta">
+                            <p>¡Por supuesto! Nuestro equipo de referencistas y personal especializado está disponible permanentemente para guiarlo.</p>
+                            <p>Podemos instruirlo en el uso de los catálogos, ayudarlo a armar estrategias de búsqueda complejas o localizar documentos difíciles de encontrar. No dude en acercarse al mostrador o contactarnos por correo electrónico.</p>
+                        </div>
+                    </div>
+
+					<div class="ayuda-separador"><span>Búsquedas y Catálogo</span></div>
+					
+                    <div class="ayuda-card-acordeon" data-categoria="basico" data-keywords="buscar titulo autor basico">
+                        <div class="ayuda-card-pregunta" onclick="this.parentElement.classList.toggle('open')">
+                            <span><i class="fas fa-angle-right text-primary"></i> ¿Cómo realizo una búsqueda básica en el catálogo?</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </div>
+                        <div class="ayuda-card-respuesta">
+                            <p>Diríjase a la pestaña <strong>Búsqueda Simple</strong> dentro del Catálogo Bibliográfico. Puede ingresar términos sueltos o frases completas.</p>
+                            <p>El sistema buscará de manera inteligente y simultánea en los campos de <strong>título, autor y palabras clave</strong>, entre otros. Para refinar por un campo específico, le sugerimos utilizar la pestaña de Búsqueda Avanzada.</p>
+                        </div>
+                    </div>
+
+                    <div class="ayuda-card-acordeon" data-categoria="basico" data-keywords="compartir enlace deep link URL mandar guardar">
+                        <div class="ayuda-card-pregunta" onclick="this.parentElement.classList.toggle('open')">
+                            <span><i class="fas fa-angle-right text-primary"></i> ¿Cómo comparto los resultados de mi búsqueda?</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </div>
+                        <div class="ayuda-card-respuesta">
+                            <p>Cuando visualice resultados en la pantalla, notará un botón amarillo en la esquina superior derecha del recuadro. Al presionar <span class="ayuda-resalte-color"><i class="fas fa-link"></i> Compartir</span>, se copiará un enlace inteligente a su portapapeles. Quien haga clic en él verá exactamente su misma pantalla de resultados con los mismos filtros aplicados.</p>
+                            <div class="ayuda-ejemplo-caja">
+                                <i class="fas fa-lightbulb" style="color: var(--accent);"></i> Dicho enlace puede ser guardado en los marcadores de su navegador web.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ayuda-card-acordeon" data-categoria="avanzado" data-keywords="truncado asterisco signo pesos comodin raiz avanzado">
+                        <div class="ayuda-card-pregunta" onclick="this.parentElement.classList.toggle('open')">
+                            <span><i class="fas fa-angle-right text-primary"></i> ¿Cómo utilizo los truncados o comodines de búsqueda?</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </div>
+                        <div class="ayuda-card-respuesta">
+                            <p>El motor de la Biblioteca permite el uso del <span class="ayuda-etiqueta">truncamiento</span> automático para encontrar variantes, plurales o derivaciones de una misma palabra raíz.</p>
+                            <div class="ayuda-ejemplo-caja">
+                                <strong>Ejemplo práctico:</strong> Si ingresa el término <span class="ayuda-resalte-color">solda</span>, el sistema recuperará documentos que contengan palabras como: <em>soldadura</em>, <em>soldador</em>, <em>soldar</em>, etc.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ayuda-card-acordeon" data-categoria="avanzado" data-keywords="filtros inti instituciones idiomas años">
+                        <div class="ayuda-card-pregunta" onclick="this.parentElement.classList.toggle('open')">
+                            <span><i class="fas fa-angle-right text-primary"></i> ¿Cómo filtro por año, idioma o producción del INTI?</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </div>
+                        <div class="ayuda-card-respuesta">
+                            <p>En la <strong>Búsqueda Avanzada</strong> encontrará casilleros específicos para restringir su consulta. Puede tipear un año exacto de publicación o seleccionar el idioma del documento.</p>
+                            <div class="ayuda-ejemplo-caja" style="border-left-color: var(--primary);">
+                                <i class="fas fa-check-square" style="color: var(--primary);"></i> Seleccionando la opción <strong>"Mostrar sólo trabajos producidos por el INTI"</strong> al pie del formulario, filtrará instantáneamente toda la literatura externa.
+                            </div>
+                        </div>
+                    </div>
+					
+					<div class="ayuda-card-acordeon" data-categoria="basico" data-keywords="sugerencias autocompletar predecir palabras tesauro inteligente predictivo">
+                        <div class="ayuda-card-pregunta" onclick="this.parentElement.classList.toggle('open')">
+                            <span><i class="fas fa-angle-right text-primary"></i> ¿Cómo me ayuda el sistema a encontrar las palabras correctas?</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </div>
+                        <div class="ayuda-card-respuesta">
+                            <p>Mientras usted tipea en el campo de búsqueda, nuestro sistema inteligente le sugerirá términos, áreas de estudio y conceptos validados por nuestro <strong>Tesauro</strong>.</p>
+                            <ul class="ayuda-lista-vineta">
+                                <li><strong>¿Por qué es útil?</strong> Utilizar los términos sugeridos garantiza que su búsqueda coincidirá exactamente con la forma en que nuestros bibliotecarios han clasificado los documentos, asegurando resultados precisos y exhaustivos.</li>
+                                <li><strong>¿Cómo lo uso?</strong> Simplemente comience a escribir. Si ve un término relevante en la lista desplegable, puede hacer clic sobre él o seleccionarlo usando las flechas de su teclado y presionando <code>Enter</code>.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="ayuda-card-acordeon" data-categoria="basico" data-keywords="guardar busqueda historial mis busquedas retener favorito marcador">
+                        <div class="ayuda-card-pregunta" onclick="this.parentElement.classList.toggle('open')">
+                            <span><i class="fas fa-angle-right text-primary"></i> ¿Cómo puedo guardar mis búsquedas para consultarlas más tarde?</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </div>
+                        <div class="ayuda-card-respuesta">
+                            <p>Si encontró un conjunto de resultados útil, puede guardar esa búsqueda exacta en su dispositivo para no perderlas.</p>
+                            <ol style="margin-left: 20px; margin-bottom: 15px; color: #444;">
+                                <li style="margin-bottom: 8px;"><strong>Guarde:</strong> Una vez que tenga resultados en pantalla, haga clic en el botón <span class="ayuda-resalte-color"><i class="fas fa-bookmark"></i> Guardar</span> ubicado en la esquina superior derecha del recuadro.</li>
+                                <li style="margin-bottom: 8px;"><strong>Consulte:</strong> Para ver todas sus búsquedas guardadas, haga clic en el botón <span class="ayuda-resalte-color"><i class="fas fa-bookmark"></i></span> (el ícono de la cinta con el contador numérico) que se encuentra siempre visible en la cabecera superior de la página.</li>
+                                <li style="margin-bottom: 8px;"><strong>Gestione:</strong> Desde su lista personal, podrá <strong>Relanzar</strong> la búsqueda con un solo clic, <strong>Copiar el enlace</strong> para compartirla, o <strong>Eliminarla</strong> cuando ya no la necesite.</li>
+                            </ol>
+                            <div class="ayuda-ejemplo-caja" style="border-left-color: var(--primary);">
+                                <i class="fas fa-user-shield" style="color: var(--primary);"></i> <strong>Privacidad:</strong> Sus búsquedas se guardan de forma local y segura en su propio navegador. No requiere crear cuentas ni contraseñas. Tenga en cuenta que si utiliza otro dispositivo o navegador, o si borra su historial de navegación, la lista se vaciará.
+                            </div>
+                        </div>
+                    </div>
+					
+					<div class="ayuda-separador"><span>Colecciones y Normas</span></div>
+
+                    <div class="ayuda-card-acordeon" data-categoria="colecciones" data-keywords="diferencia base inti cat libros normas">
+                        <div class="ayuda-card-pregunta" onclick="this.parentElement.classList.toggle('open')">
+                            <span><i class="fas fa-angle-right text-primary"></i> ¿Qué diferencia hay entre la base <em>Libros + Normas</em> y la base <em>Libros</em>?</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </div>
+                        <div class="ayuda-card-respuesta">
+                            <p>En el selector de bases de datos del Catálogo verá estas dos opciones principales. Conocer su diferencia le ahorrará mucho tiempo:</p>
+                            <ul class="ayuda-lista-vineta">
+                                <li><strong>Base INTI</strong> <i>(Libros + Normas)</i>: Es nuestra base más amplia. Busca simultáneamente en toda la colección de libros, monografías, tesis y en el catálogo completo de normas técnicas.</li>
+                                <li><strong>Base CAT</strong> <i>(Libros)</i>: Excluye las normas técnicas de los resultados. Es ideal si usted solo está buscando literatura, manuales o libros de texto y no quiere que los resultados se mezclen con regulaciones o normativas.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="ayuda-card-acordeon" data-categoria="colecciones" data-keywords="normas tecnicas iram iso astm acceso descargar pdf comprar">
+                        <div class="ayuda-card-pregunta" onclick="this.parentElement.classList.toggle('open')">
+                            <span><i class="fas fa-angle-right text-primary"></i> Acceso a Normas Técnicas</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </div>
+                        <div class="ayuda-card-respuesta">
+                            <p>Nuestra colección de normas técnicas posee <strong>restricciones estrictas</strong> debido a las leyes de derechos de autor internacionales y convenios institucionales.</p>
+                            
+                            <div class="ayuda-ejemplo-caja" style="border-left-color: #28a745; background-color: #f6fff8;">
+                                <i class="fas fa-check-circle" style="color: #28a745;"></i> <strong style="color: #155724;">A QUÉ SE PUEDE ACCEDER:</strong><br>
+                                Las <strong>Normas Técnicas</strong> están disponibles en texto completo <em>única y exclusivamente para lectura en pantalla</em> desde las computadoras autorizadas en la sala de nuestra Biblioteca o en cualquier computadora dentro de la red del INTI.
+                            </div>
+
+                            <div class="ayuda-ejemplo-caja" style="border-left-color: #dc3545; background-color: #fff5f5;">
+                                <i class="fas fa-times-circle" style="color: #dc3545;"></i> <strong style="color: #721c24;">A QUÉ NO SE PUEDE ACCEDER:</strong><br>
+                                La biblioteca <strong>no envía por correo electrónico, ni permite la descarga o impresión en PDF</strong> de ninguna norma técnica protegida por derechos de autor (ISO, IEC, ASTM, DIN, IRAM, etc.).<br><br>
+                                Los usuarios externos que requieran una copia para uso personal o comercial, deberán adquirirla directamente a través del organismo emisor correspondiente.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ayuda-card-acordeon" data-categoria="colecciones" data-keywords="kardex revistas publicaciones periodicas indice">
+                        <div class="ayuda-card-pregunta" onclick="this.parentElement.classList.toggle('open')">
+                            <span><i class="fas fa-angle-right text-primary"></i> ¿Qué materiales contiene la base <em>Revistas</em>?</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </div>
+                        <div class="ayuda-card-respuesta">
+                            <p>La base <strong>Kardex</strong> <i>(Revistas)</i> es el registro histórico de las revistas y publicaciones periódicas especializadas (en formato físico) que componen la hemeroteca del INTI.</p>
+							<p>Tenga en cuenta que no contiene artículos individuales, sino el título general de la publicación. Para explorar todo el acervo disponible, seleccione la base Kardex en el Catálogo y presione <span class="ayuda-resalte-color"><a href="#" onclick="openIndiceKardex(, this); return false;">Abrir Índice de Revistas</a></span>.</p>
+                        </div>
+                    </div>
+
+                    <div class="ayuda-card-acordeon" data-categoria="colecciones" data-keywords="diccionarios tecnicos traductor cobre caucho ensayos no destructivos">
+                        <div class="ayuda-card-pregunta" onclick="this.parentElement.classList.toggle('open')">
+                            <span><i class="fas fa-angle-right text-primary"></i> ¿Cómo se utilizan los Diccionarios Técnicos?</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </div>
+                        <div class="ayuda-card-respuesta">
+                            <p>Nuestra sección de Diccionarios ofrece vocabularios controlados en múltiples idiomas (inglés, español, portugués) creados por especialistas del INTI.</p>
+                            <ul class="ayuda-lista-vineta">
+                                <li><strong>Búsqueda de traducción:</strong> Ingrese un término técnico para ver su equivalente validado en otro idioma.</li>
+                                <li><strong>Cruce Bibliográfico:</strong> Una vez que encuentre un término en el diccionario, verá un botón para buscar automáticamente ese concepto dentro de la bibliografía de nuestro Catálogo General. Lo mismo puede hacer con los términos ingresados.</li>
+                            </ul>
+                        </div>
+                    </div>
+					
+					<div class="ayuda-card-acordeon" data-categoria="colecciones" data-keywords="operadores booleanos and or not y o sin combinar">
+                        <div class="ayuda-card-pregunta" onclick="this.parentElement.classList.toggle('open')">
+                            <span><i class="fas fa-angle-right text-primary"></i> ¿Cómo funcionan los operadores lógicos (AND, OR, NOT)?</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </div>
+                        <div class="ayuda-card-respuesta">
+                            <p>Disponibles en los Diccionarios, le permiten combinar términos lógicamente:</p>
+                            <ul class="ayuda-lista-vineta">
+                                <li><span class="ayuda-etiqueta-bool">Y (AND)</span> Recupera registros que contengan <strong>ambos</strong> términos. <em>(Achica y precisa la búsqueda)</em>.</li>
+                                <li><span class="ayuda-etiqueta-bool">O (OR)</span> Recupera registros que contengan <strong>al menos uno</strong> de los términos. <em>(Ideal para sinónimos)</em>.</li>
+                                <li><span class="ayuda-etiqueta-bool">SIN (NOT)</span> <strong>Excluye</strong> estrictamente de los resultados el término que le sigue.</li>
+                            </ul>
+                        </div>
+                    </div>
+					
+					<div class="ayuda-separador"><span>Herramientas Internas y Externas</span></div>
+
+                    <div class="ayuda-card-acordeon" data-categoria="herramientas" data-keywords="guia fuentes directorio bases de datos internet">
+                        <div class="ayuda-card-pregunta" onclick="this.parentElement.classList.toggle('open')">
+                            <span><i class="fas fa-angle-right text-primary"></i> ¿Qué es la Guía de Fuentes de Información?</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </div>
+                        <div class="ayuda-card-respuesta">
+                            <p>Es un directorio web curado y validado por nuestros profesionales. Clasifica y organiza enlaces a bases de datos científicas, bibliotecas virtuales, catálogos de normas y repositorios externos.</p>
+                            <p>Puede navegarla libremente mediante su menú lateral interactivo (clasificado por áreas de estudio) o utilizar su buscador interno para encontrar entidades o sitios web específicos.</p>
+                        </div>
+                    </div>
+
+                    <div class="ayuda-card-acordeon" data-categoria="herramientas" data-keywords="repositorio institucional dspace greenstone tesis informes">
+                        <div class="ayuda-card-pregunta" onclick="this.parentElement.classList.toggle('open')">
+                            <span><i class="fas fa-angle-right text-primary"></i> ¿Qué diferencia al Repositorio del Catálogo?</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </div>
+                        <div class="ayuda-card-respuesta">
+                            <p>Mientras que el <strong>Catálogo</strong> contiene normas técnicas, libros, revistas y documentos varios adquiridos por la biblioteca (y también producidos por el INTI), el <strong>Repositorio Institucional</strong> aloja exclusivamente la producción intelectual propia del INTI.</p>
+                            <p>El repositorio es de <em>Acceso Abierto</em> e incluye artículos científicos, informes técnicos, tesis, presentaciones en congresos y manuales generados íntegramente por el personal de la institución.</p>
+                        </div>
+                    </div>
+
+                    <div class="ayuda-card-acordeon" data-categoria="herramientas" data-keywords="tesauro vocabulario controlado indizacion">
+                        <div class="ayuda-card-pregunta" onclick="this.parentElement.classList.toggle('open')">
+                            <span><i class="fas fa-angle-right text-primary"></i> ¿Para qué sirve el Tesauro INTI?</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </div>
+                        <div class="ayuda-card-respuesta">
+                            <p>El Tesauro es un vocabulario controlado y jerarquizado. Es la herramienta estructural que utilizan nuestros bibliotecarios para indexar temáticamente todos los documentos del acervo.</p>
+                            <p>Los investigadores pueden consultarlo para descubrir cuáles son los "términos preferidos" con los que deben realizar sus búsquedas en el catálogo para obtener resultados de altísima precisión.</p>
+                        </div>
+                    </div>
+					
+					<div class="ayuda-card-acordeon" data-categoria="herramientas" data-keywords="biblioteca electronica cyt mincyt revistas cientificas articulos papers suscripcion internacional">
+                        <div class="ayuda-card-pregunta" onclick="this.parentElement.classList.toggle('open')">
+                            <span><i class="fas fa-angle-right text-primary"></i> ¿Qué recursos ofrece la Biblioteca Electrónica de CyT?</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </div>
+                        <div class="ayuda-card-respuesta">
+                            <p>La <strong>Biblioteca Electrónica de Ciencia y Tecnología</strong> es un portal nacional que brinda acceso a bases de datos científicas internacionales, permitiendo la consulta de artículos completos de más de 11.000 revistas técnicas y 9.000 libros bajo suscripción.</p>
+                            <p><em>Nota de acceso:</em> Al ser un recurso por suscripción, la descarga de los textos completos requiere que el usuario ingrese desde las computadoras o la red de una institución habilitada (como la red interna del INTI).</p>
+                        </div>
+                    </div>
+
+                    <div class="ayuda-card-acordeon" data-categoria="herramientas" data-keywords="snrd sistema nacional repositorios digitales acceso abierto red argentina ciencia produccion">
+                        <div class="ayuda-card-pregunta" onclick="this.parentElement.classList.toggle('open')">
+                            <span><i class="fas fa-angle-right text-primary"></i> ¿Qué es el Sistema Nacional de Repositorios Digitales (SNRD)?</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </div>
+                        <div class="ayuda-card-respuesta">
+                            <p>El <strong>SNRD</strong> es una red conformada por los repositorios institucionales de los distintos organismos de ciencia y tecnología de la República Argentina (incluido el nuestro).</p>
+                            <p>A diferencia de la Biblioteca Electrónica (que requiere suscripción), el SNRD es un portal de <strong>Acceso Abierto</strong>. Su objetivo es unificar y permitir la búsqueda centralizada de toda la producción científico-tecnológica nacional que ha sido financiada con fondos públicos, poniéndola a disposición de cualquier ciudadano de forma gratuita.</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div id="ayuda-no-results" class="hidden" style="text-align: center; padding: 50px 20px;">
+                    <i class="fas fa-folder-open" style="font-size: 3.5rem; color: #d0d7de; margin-bottom: 15px;"></i>
+                    <h3 style="color: #555; font-weight: 500;">No se encontraron respuestas para su búsqueda</h3>
+                    <p style="color: #888;">Intente con sinónimos u otras palabras clave.</p>
+                    <button class="btn btn-outline" style="margin-top: 10px;" onclick="document.getElementById('ayudaSearch').value = ''; filtrarAyuda();">Limpiar Búsqueda</button>
+                </div>
+
+                <div class="ayuda-cta-banner">
+                    <div class="ayuda-cta-content">
+                        <i class="fas fa-headset"></i>
+                        <div>
+                            <h4>¿Necesita asistencia personalizada?</h4>
+                            <p>Nuestros referencistas están a disposición para realizar búsquedas expertas o guiarlo.</p>
+                        </div>
+                    </div>
+					<button class="btn btn-primary" onclick="window.open('https://app.inti.gob.ar/web/formulador?formulario&id=46', '_blank', 'noopener,noreferrer'); return false;">
+						<i class="fas fa-comment-dots"></i> Consúltenos
+					</button>
+                </div>
+
+            </div>
+        </div>
+		
+		
+		
+    </div> 
+    
+    <div class="black-separator" aria-hidden="true"></div>
+
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" onclick="scrollToTop()">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+				<h4>Biblioteca INTI</h4>
+				<p>Av. Gral. Paz 5445, San Martín.</p>
+				<p>Edificio 5 - Parque Tecnológico Miguelete</p>
+				<br>
+					<a href="#" onclick="toggleModalMapa(event, this); return false;" class="footer-mapa-link">
+						<i class="fas fa-map-marker-alt" style="margin-right: 6px; color: #FF6D00;"></i>¿Cómo llegar?
+					</a>
+			</div>	
+			<div class="footer-col">
+				<h4>Secciones</h4>
+				<ul>
+				<li><a href="#catalogo" onclick="showSection('home', this); return false;">Inicio</a></li>
+				<li><a href="#catalogo" onclick="showSection('catalogo', this); return false;">Catálogo</a></li>
+				<li><a href="#fuentes" onclick="showSection('fuentes', this); return false;">Guía de Fuentes</a></li>
+				<li><a href="#diccionarios" onclick="showSection('diccionarios', this); return false;">Diccionarios Técnicos</a></li>
+				<li><a href="#novedades" onclick="showSection('novedades', this); return false;">Noticias</a></li>
+				<li><a href="#faq" onclick="showSection('faq', this); return false;">Ayuda</a></li>
+				</ul>
+			</div>
+            <div class="footer-col">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="https://www.argentina.gob.ar" target="_blank" rel="noopener noreferrer">Argentina.gob.ar</a></li>
+					<li><a href="https://www.inti.gob.ar" target="_blank" rel="noopener noreferrer">Web INTI</a></li>
+					<li><a href="https://app.inti.gob.ar/greenstone3/biblio" target="_blank" rel="noopener noreferrer">Repositorio Institucional INTI</a></li>
+					<li><a href="https://www.inti.gob.ar/publicaciones" target="_blank" rel="noopener noreferrer">Publicaciones INTI</a></li>
+					<li><a href="https://biblioteca.sicyt.gob.ar/index.php" target="_blank" rel="noopener noreferrer">Biblioteca Electrónica de Ciencia y Tecnología</a></li>
+					<li><a href="https://repositoriosdigitales.mincyt.gob.ar" target="_blank" rel="noopener noreferrer">Sistema Nacional de Repositorios Digitales</a></li>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Redes INTI</h4>
+                <div class="social-links">
+                    <a href="https://x.com/intiargentina" target="_blank" rel="noopener noreferrer" aria-label="Seguir a INTI en X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+					<a href="https://www.facebook.com/INTIArg" target="_blank" rel="noopener noreferrer" aria-label="Seguir a INTI en Facebook"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://www.instagram.com/intiargentina" target="_blank" rel="noopener noreferrer" aria-label="Seguir a INTI en Instagram"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.youtube.com/canalinti" target="_blank" rel="noopener noreferrer" aria-label="Ver canal de INTI en YouTube"><i class="fab fa-youtube"></i></a>
+					<a href="https://www.linkedin.com/company/inti" target="_blank" rel="noopener noreferrer" aria-label="Seguir a INTI en LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <div style="text-align: center; border-top: 1px solid #444; padding-top: 20px; font-size: 0.8rem;">
+            2026 - Instituto Nacional de Tecnología Industrial
+        </div>
+    </footer>
+
+    <div id="results-modal">
+        <div class="modal-content">
+           <div class="results-header">
+                <h3 id="modal-resultados-titulo">Catálogo</h3>
+                
+                <div style="display: flex; gap: 15px; align-items: center;">
+					<button class="btn-guardar-busqueda" onclick="guardarBusquedaActual()" title="Guardar esta búsqueda" id="btn-guardar-actual" style="display:none;">
+						<i class="fas fa-bookmark"></i> Guardar
+					</button>
+					<button class="btn-share-link" onclick="copiarEnlaceBusqueda()" title="Copiar enlace directo a esta búsqueda">
+						<i class="fas fa-link"></i> Compartir
+					</button>
+					<button class="modal-close-btn" onclick="closeModal()" title="Cerrar" aria-label="Cerrar ventana de resultados">
+						<i class="fas fa-times" aria-hidden="true"></i>
+					</button>
+				</div>
+                
+                <button class="modal-scroll-fab" id="modalScrollFab" title="Ir al final" aria-label="Ir al final de los resultados">
+					<i class="fas fa-chevron-down" aria-hidden="true"></i>
+				</button>
+            </div>
+            
+            <div class="modern-loader-container" id="loading-indicator">
+				<div class="bouncing-dots">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+
+            <div class="iframe-container">
+                <iframe name="resultsFrame" class="results-frame" id="resultsFrame" scrolling="no" onload="onIframeLoad()"></iframe>
+            </div>
+        </div>
+    </div>
+
+	<div id="fuentes-modal" class="modal-fuentes">
+        <div class="modal-fuentes-content" style="position: relative;">
+            
+            <div class="modal-fuentes-header">
+                <h3><i class="fas fa-globe"></i> Guía de Fuentes de Información</h3>
+                <button class="modal-fuentes-close-btn" onclick="closeFuentesModal()" title="Cerrar" aria-label="Cerrar guía de fuentes">
+					<i class="fas fa-times" aria-hidden="true"></i>
+				</button>
+            </div>
+            
+            <div class="modern-loader-container" id="fuentes-loading-indicator">
+				<div class="bouncing-dots">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+
+            <div id="fuentes-modal-breadcrumb" class="modal-breadcrumb-container"></div>
+
+            <div class="modal-fuentes-iframe-container">
+                <iframe name="fuentesFrame" class="modal-fuentes-frame" id="fuentesFrame" onload="onFuentesIframeLoad()"></iframe>
+            </div>
+
+			<button class="modal-scroll-fab" id="fuentesScrollFab" title="Ir al final" aria-label="Ir al final de la guía">
+				<i class="fas fa-chevron-down" aria-hidden="true"></i>
+			</button>
+
+        </div>
+    </div>
+
+	<div id="modal-mapa" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:9999; align-items:center; justify-content:center;">
+		<div style="background:white; border-radius:12px; box-shadow:0 20px 60px rgba(0,0,0,0.3); width:90%; max-width:650px; overflow:hidden;">
+			<div style="padding:15px 20px; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #eee;">
+				<span style="font-weight:600; color:var(--primary);"><i class="fas fa-map-marker-alt" style="margin-right:8px;"></i>Cómo llegar al INTI</span>
+				<button onclick="toggleModalMapa()" aria-label="Cerrar mapa" style="cursor:pointer; color:#999; font-size:1.2rem; background:none; border:none; padding:4px; line-height:1;"><i class="fas fa-times" aria-hidden="true"></i></button>
+			</div>
+			<iframe src="https://maps.google.com/maps?q=Av.+General+Paz+5445,+San+Martín,+Buenos+Aires&output=embed"
+				width="100%" height="350" style="border:none; display:block;" loading="lazy"
+				sandbox="allow-scripts allow-same-origin"
+				referrerpolicy="no-referrer">
+			</iframe>
+			<div style="padding:12px 20px; display:flex; justify-content:space-between; align-items:center; background:#f9f9f9; border-top:1px solid #eee;">
+				<span style="font-size:0.9rem; color:#555;"><i class="fas fa-building" style="color:var(--primary); margin-right:8px;"></i>Edificio 5 — Parque Tecnológico Miguelete</span>
+				<a href="https://maps.google.com/?q=Av.+General+Paz+5445,+San+Martín,+Buenos+Aires" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:var(--primary); font-weight:500; white-space:nowrap; margin-left:15px;"><i class="fas fa-external-link-alt" style="margin-right:5px;"></i>Abrir en Maps</a>
+			</div>
+		</div>
+	</div>
+	
+	<div id="modal-mis-busquedas" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:2500; align-items:center; justify-content:center; padding:20px;">
+		<div style="background:white; border-radius:12px; box-shadow:0 10px 40px rgba(0,0,0,0.4); width:100%; max-width:650px; max-height:85vh; display:flex; flex-direction:column; overflow:hidden;">
+			
+			<div style="padding:18px 25px; background:var(--primary); color:white; display:flex; justify-content:space-between; align-items:center; flex-shrink:0;">
+				<h3 style="margin:0; font-size:1.1rem; display:flex; align-items:center; gap:10px;">
+					<i class="fas fa-bookmark"></i> Mis Búsquedas Guardadas
+				</h3>
+				<button onclick="toggleMisBusquedas()" style="background:none; border:none; color:white; font-size:1.4rem; cursor:pointer; opacity:0.8; line-height:1;" aria-label="Cerrar">
+					<i class="fas fa-times"></i>
+				</button>
+			</div>
+
+			<div id="mis-busquedas-lista" style="flex-grow:1; overflow-y:auto; padding:20px;">
+			</div>
+
+			<div style="padding:15px 25px; border-top:1px solid #eee; display:flex; justify-content:flex-end; flex-shrink:0;">
+				<button onclick="borrarTodasLasBusquedas()" style="background:none; border:1px solid #dc3545; color:#dc3545; border-radius:6px; padding:8px 16px; font-size:0.85rem; cursor:pointer; display:flex; align-items:center; gap:6px; transition:all 0.2s;">
+					<i class="fas fa-trash-alt"></i> Borrar todo
+				</button>
+			</div>
+		</div>
+	</div>
+	
+	<div id="contact-backdrop" class="contact-backdrop" onclick="toggleContactPanel()"></div>
+
+	<div id="side-contact-panel" class="side-panel-container">
+		<button class="side-panel-tab" onclick="toggleContactPanel()" aria-label="Abrir panel de contacto">
+			<i class="fas fa-comment-dots"></i>
+			<span>Contacto</span>
+		</button>
+		
+		<div class="side-panel-content">
+			<div class="side-panel-header">
+				<h3><i class="fas fa-headset" style="margin-right: 8px;"></i>Atención al Usuario</h3>
+				<p>Seleccione el medio de comunicación que prefiera para enviarnos su consulta bibliográfica.</p>
+			</div>
+			
+			<div class="contact-cards-wrapper">
+				<a href="mailto:biblio@inti.gob.ar" class="contact-action-card">
+					<div class="cac-icon email-icon"><i class="fas fa-envelope-open-text"></i></div>
+					<div class="cac-info">
+						<h4>Correo Electrónico</h4>
+						<p>biblio@inti.gob.ar</p>
+					</div>
+				</a>
+
+				<a href="#" onclick="window.open('https://app.inti.gob.ar/web/formulador?formulario&id=46', '_blank', 'noopener,noreferrer'); return false;" class="contact-action-card">
+					<div class="cac-icon form-icon"><i class="fas fa-file-signature"></i></div>
+					<div class="cac-info">
+						<h4>Formulario Web</h4>
+						<p>Sistema oficial de tickets</p>
+					</div>
+					<i class="fas fa-external-link-alt external-icon"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<script src="scripts/main.js"></script>
+	
+</body>
+</html>

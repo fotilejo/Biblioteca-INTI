@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Círculo exterior -->
+  <circle cx="50" cy="50" r="46" fill="white" stroke="#0072bb" stroke-width="5"/>
+  
+  <!-- Grilla de 7x7 cuadraditos centrada -->
+  <!-- Cada cuadrado: 7px, gap: 2px, bloque total: 7*7 + 6*2 = 61px, offset: (100-61)/2 = 19.5 -->
+  <g fill="#0072bb">
+    <!-- Fila 1 -->
+    <rect x="19.5" y="19.5" width="7" height="7"/>
+    <rect x="28.5" y="19.5" width="7" height="7"/>
+    <rect x="37.5" y="19.5" width="7" height="7"/>
+    <rect x="46.5" y="19.5" width="7" height="7"/>
+    <rect x="55.5" y="19.5" width="7" height="7"/>
+    <rect x="64.5" y="19.5" width="7" height="7"/>
+    <rect x="73.5" y="19.5" width="7" height="7"/>
+    <!-- Fila 2 -->
+    <rect x="19.5" y="28.5" width="7" height="7"/>
+    <rect x="28.5" y="28.5" width="7" height="7"/>
+    <rect x="37.5" y="28.5" width="7" height="7"/>
+    <rect x="46.5" y="28.5" width="7" height="7"/>
+    <rect x="55.5" y="28.5" width="7" height="7"/>
+    <rect x="64.5" y="28.5" width="7" height="7"/>
+    <rect x="73.5" y="28.5" width="7" height="7"/>
+    <!-- Fila 3 -->
+    <rect x="19.5" y="37.5" width="7" height="7"/>
+    <rect x="28.5" y="37.5" width="7" height="7"/>
+    <rect x="37.5" y="37.5" width="7" height="7"/>
+    <rect x="46.5" y="37.5" width="7" height="7"/>
+    <rect x="55.5" y="37.5" width="7" height="7"/>
+    <rect x="64.5" y="37.5" width="7" height="7"/>
+    <rect x="73.5" y="37.5" width="7" height="7"/>
+    <!-- Fila 4 -->
+    <rect x="19.5" y="46.5" width="7" height="7"/>
+    <rect x="28.5" y="46.5" width="7" height="7"/>
+    <rect x="37.5" y="46.5" width="7" height="7"/>
+    <rect x="46.5" y="46.5" width="7" height="7"/>
+    <rect x="55.5" y="46.5" width="7" height="7"/>
+    <rect x="64.5" y="46.5" width="7" height="7"/>
+    <rect x="73.5" y="46.5" width="7" height="7"/>
+    <!-- Fila 5 -->
+    <rect x="19.5" y="55.5" width="7" height="7"/>
+    <rect x="28.5" y="55.5" width="7" height="7"/>
+    <rect x="37.5" y="55.5" width="7" height="7"/>
+    <rect x="46.5" y="55.5" width="7" height="7"/>
+    <rect x="55.5" y="55.5" width="7" height="7"/>
+    <rect x="64.5" y="55.5" width="7" height="7"/>
+    <rect x="73.5" y="55.5" width="7" height="7"/>
+    <!-- Fila 6 -->
+    <rect x="19.5" y="64.5" width="7" height="7"/>
+    <rect x="28.5" y="64.5" width="7" height="7"/>
+    <rect x="37.5" y="64.5" width="7" height="7"/>
+    <rect x="46.5" y="64.5" width="7" height="7"/>
+    <rect x="55.5" y="64.5" width="7" height="7"/>
+    <rect x="64.5" y="64.5" width="7" height="7"/>
+    <rect x="73.5" y="64.5" width="7" height="7"/>
+    <!-- Fila 7 -->
+    <rect x="19.5" y="73.5" width="7" height="7"/>
+    <rect x="28.5" y="73.5" width="7" height="7"/>
+    <rect x="37.5" y="73.5" width="7" height="7"/>
+    <rect x="46.5" y="73.5" width="7" height="7"/>
+    <rect x="55.5" y="73.5" width="7" height="7"/>
+    <rect x="64.5" y="73.5" width="7" height="7"/>
+    <rect x="73.5" y="73.5" width="7" height="7"/>
+  </g>
+</svg>

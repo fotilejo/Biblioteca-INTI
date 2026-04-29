@@ -1,0 +1,77 @@
+[
+    {
+        "dia": "10", "mes": "ABR", "anio": 2026,
+        "titulo": "Nueva versión del sitio web de la Biblioteca del INTI",
+        "texto": "Se encuentra disponible la nueva versión del sitio web de la Biblioteca del INTI. El mismo incorpora nuevas prestaciones e interfaz completamente actualizada."
+    },
+    {
+        "dia": "01", "mes": "NOV", "anio": 2025,
+        "titulo": "Nueva versión de la Guía de fuentes para la búsqueda de información en Internet",
+        "texto": "Está disponible en este link: <a href=\"#fuentes\" onclick=\"showSection('fuentes'); return false;\" style=\"color: var(--primary); font-weight: bold;\">Guía de Fuentes</a>.<br><br>Se actualizaron las categorías temáticas y los contenidos. El menú fue recodificado para facilitar su uso desde teléfonos celulares y pantallas táctiles. Agradecemos a los usuarios de la Guía sus comentarios y sugerencias, que pueden hacernos llegar a <a href=\"mailto:biblio@inti.gob.ar\" style=\"color: var(--primary); font-weight: bold;\">biblio@inti.gob.ar</a>."
+    },
+    {
+        "dia": "08", "mes": "MAR", "anio": 2025,
+        "titulo": "Taller sobre Búsqueda de Información y Recursos Electrónicos de la Biblioteca - cambio de fecha.",
+        "texto": "El próximo Taller se hará de manera virtual los días 8, 10, 15 y 22 de abril, de 9 a 12 h.<br><br>A los temas habituales se sumarán, en esta ocasión, diversas aplicaciones, riesgos y ventajas de la Inteligencia Artificial aplicada a la búsqueda de información.<br><br>Las personas interesadas pueden comunicarse a <a href=\"mailto:biblio@inti.gob.ar\" style=\"color: var(--primary); font-weight: bold;\">biblio@inti.gob.ar</a>"
+    },
+    {
+        "dia": "01", "mes": "MAR", "anio": 2025,
+        "titulo": "Taller sobre Búsqueda de Información y Recursos Electrónicos de la Biblioteca.",
+        "texto": "El próximo Taller se hará los días 1, 3, 8 y 10 de abril.<br><br>A los temas habituales se sumarán, en esta ocasión, diversas aplicaciones, riesgos y ventajas de la Inteligencia Artificial aplicada a la búsqueda de información.<br><br>Las personas interesadas pueden comunicarse a <a href=\"mailto:biblio@inti.gob.ar\" style=\"color: var(--primary); font-weight: bold;\">biblio@inti.gob.ar</a>"
+    },
+    {
+        "dia": "01", "mes": "MAR", "anio": 2024,
+        "titulo": "Suscripciones y servicios de la Biblioteca Electrónica de Ciencia y Tecnología",
+        "texto": "Desde la Subsecretaría de Ciencia y Tecnología nos informan que aún no se han podido renovar las suscripciones para el año en curso.<br><br>Por ese motivo, no están activos los accesos a las publicaciones de 2024 ni a las bases de datos que contrataba el MinCyT, pero continúan disponibles las publicaciones periódicas y los libros contratados hasta diciembre de 2023."
+    },
+    {
+        "dia": "01", "mes": "ENE", "anio": 2024,
+        "titulo": "World Robotics",
+        "texto": "El personal del INTI puede acceder a los estudios anuales <a href=\"http://www-biblio.inti.gob.ar/inti/wrobotics/index.html\" style=\"color: var(--primary); font-weight: bold;\">World Robotics</a> (período 2005-2023), que incluyen informes sobre robots industriales y robots de servicio, publicados por <a href=\"https://ifr.org/\" target=\"_blank\" style=\"color: var(--primary); font-weight: bold;\">International Federation of Robotics</a>."
+    },
+    {
+        "dia": "01", "mes": "JUN", "anio": 2023,
+        "titulo": "Semana de Ciencia Abierta La Referencia 2023",
+        "texto": "Más información en: <a href=\"https://recursos.lareferencia.info/semana-de-ciencia-abierta2023/\" target=\"_blank\" style=\"color: var(--primary); font-weight: bold;\">recursos.lareferencia.info/semana-de-ciencia-abierta2023/</a><br><br><img src=\"imagenes/LaRefe.png\" alt=\"La Referencia\" style=\"max-width: 100%; border-radius: 6px; margin-top: 10px;\" />"
+    },
+    {
+        "dia": "25", "mes": "JUL", "anio": 2021,
+        "titulo": "Pharmaceutical Substances",
+        "texto": "Hasta el 25 de julio, la editorial Thieme ha puesto a disposición del personal de INTI un acceso de cortesía a la herramienta Pharmaceutical Substances (<a href=\"https://pharmaceutical-substances.thieme.com/ps/\" target=\"_blank\" style=\"color: var(--primary); font-weight: bold;\">enlace aquí</a>). Esta fuente de información, relacionada con la síntesis industrial y las aplicaciones comerciales de medicamentos, contiene síntesis, patentes y solicitudes de patentes de ingredientes farmacéuticos activos.<br><br>Para tener acceso a todas sus características, es necesario conectarse desde un dispositivo perteneciente a la Red INTI o bien usar la VPN de Biblioteca Electrónica."
+    },
+    {
+        "dia": "01", "mes": "MAY", "anio": 2020,
+        "titulo": "Servicios de la Biblioteca durante la pandemia",
+        "texto": "Estamos brindando nuestros servicios de manera virtual, a través de los recursos disponibles en esta página."
+    },
+    {
+        "dia": "27", "mes": "NOV", "anio": 2019,
+        "titulo": "Taller sobre recursos de información para la industria en Internet",
+        "texto": "Se realizará los días 27 y 28 de noviembre, de 8.30 a 11.30 y 12.30 a 15.30 h. En el taller se abordarán temas relacionados con las fuentes de información, la búsqueda de información y recursos disponibles."
+    },
+    {
+        "dia": "12", "mes": "JUN", "anio": 2019,
+        "titulo": "Curso: La conservación de nuestro patrimonio documental",
+        "texto": "Se realizará el día 12 de junio, de 10 a 14h, con el objetivo de brindar un panorama acerca de la identificación de los agentes de deterioro que afectan a las colecciones documentales y los daños que ocasionan a las mismas. Docente: Mg. Carmen L. Silva."
+    },
+    {
+        "dia": "22", "mes": "OCT", "anio": 2018,
+        "titulo": "Semana del Acceso Abierto - 22 al 28 de octubre",
+        "texto": "Este año se realizan actividades presenciales y virtuales en todas partes del mundo, con el lema 'Diseñando bases equitativas para el conocimiento abierto'. Para eventos internacionales, consultar: <a href=\"http://openaccessweek.org/events\" target=\"_blank\" style=\"color: var(--primary); font-weight: bold;\">openaccessweek.org</a>"
+    },
+    {
+        "dia": "01", "mes": "SEP", "anio": 2017,
+        "titulo": "Base de datos sobre Matemáticas",
+        "texto": "Por medio de la Biblioteca Electrónica del MinCyT, se ha habilitado el acceso desde el INTI a MathSciNet (<a href=\"http://www.ams.org/mathscinet/\" target=\"_blank\" style=\"color: var(--primary); font-weight: bold;\">ams.org/mathscinet/</a>). Contiene referencias bibliográficas y resúmenes de documentos publicados desde 1940 hasta el presente."
+    },
+    {
+        "dia": "07", "mes": "JUL", "anio": 2017,
+        "titulo": "SciFinder - Sistema de información química",
+        "texto": "El día 7 de julio se realizó en la Biblioteca una capacitación para usuarios de SciFinder, dictada por el Dr. Alfonso González de ACS International Ltd. Dicho sistema proporciona acceso integrado a referencias, sustancias y reacciones en el campo de la química y ciencias relacionadas."
+    },
+    {
+        "dia": "14", "mes": "JUL", "anio": 2016,
+        "titulo": "La Ley 26.899 y la investigación científica y tecnológica",
+        "texto": "El jueves 14 de julio se hará un Seminario para personal del INTI sobre la Ley 26.899. La misma involucra aspectos muy importantes del trabajo de los investigadores, por los recaudos que se deben tomar con respecto a las publicaciones científicas y tecnológicas, así como por lo concerniente al manejo de los datos primarios."
+    }
+]
