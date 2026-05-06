@@ -40,4 +40,4 @@ The core challenge of this project was not just visual design, but **Information
 
 ---
 
-**Architected & Developed by [Joel Foti](https://github.com/fotilejo)** *Information Architect & Systems Developer* 🌐 [Portfolio](https://fotilejo.github.io/joel-foti/) | 💼 [LinkedIn](https://www.linkedin.com/in/joel-foti)
+**Architected & Developed by [Joel Foti](https://github.com/fotilejo)** *Information Architect & Systems Developer* 🌐 [Portfolio](https://fotilejo.github.io/Joel-Foti/) | 💼 [LinkedIn](https://www.linkedin.com/in/joel-foti)
